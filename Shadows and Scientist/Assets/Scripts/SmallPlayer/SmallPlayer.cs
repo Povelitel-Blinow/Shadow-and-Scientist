@@ -4,7 +4,7 @@ namespace SmallPlayerNamespace
 {
     [RequireComponent(typeof(PlayerInput))]
     [RequireComponent(typeof(PlayerBody))]
-    public class Player : MonoBehaviour
+    public class SmallPlayer : MonoBehaviour
     {
         [SerializeField] private PlayerInput _input;
         [SerializeField] private PlayerBody _body;

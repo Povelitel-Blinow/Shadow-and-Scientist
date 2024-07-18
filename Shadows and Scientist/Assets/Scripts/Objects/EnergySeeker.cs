@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GadgetsNamespace
+namespace ObjectsNamespace
 {
     public class EnergySeeker : Moveable
     {

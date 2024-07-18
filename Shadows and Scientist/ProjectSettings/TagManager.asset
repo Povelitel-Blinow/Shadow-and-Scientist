@@ -14,7 +14,7 @@ TagManager:
   - Player
   - Wall
   - UI
-  - 
+  - Objects
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 903996639
+    locked: 0
+  - name: Cursor
+    uniqueID: 1056656067
     locked: 0
