@@ -5,9 +5,10 @@ namespace ObjectsNamespace
 {
     public class Moveable : MonoBehaviour, ISelectable
     {
-        [Header("Select Scaling")]
-        [SerializeField] private float _scaleRatio; 
-        [SerializeField] private float _scaleTime; 
+        [SerializeField] private RaycastSortingLayer _sortingLayer;
+
+        private float _scaleRatio = 1.1f; 
+        private float _scaleTime = 0.3f; 
 
         private Vector3 _startOffset;
 
@@ -29,7 +30,7 @@ namespace ObjectsNamespace
                 Map.Instance.VerticalBorders.y);
             
 
-            transform.position = new Vector3(newX, newY, 0);
+            transform.position = new Vector3(newX, newY, (int)_sortingLayer);
         }
 
         public virtual void LayDown()
@@ -39,7 +40,7 @@ namespace ObjectsNamespace
 
         public void Select()
         {
-            transform.DOScale(_scaleRatio, _scaleTime);
+            transform.DOScale(new Vector3(_scaleRatio, _scaleRatio, 1), _scaleTime);
         }
 
         public void Deselect()
@@ -54,6 +55,12 @@ namespace ObjectsNamespace
         private void OnDestroy()
         {
             transform.DOKill();
+        }
+
+        private enum RaycastSortingLayer
+        {
+            Material = -1,
+            Objects
         }
     }
 }

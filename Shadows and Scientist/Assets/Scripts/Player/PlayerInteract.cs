@@ -17,6 +17,8 @@ namespace PlayerNamespace
 
         public void UpdateInteract()
         {
+            //Debug.Log(PlayerRaycast.Instance.RayCast<Moveable>()?.gameObject.name);
+
             _select.Update();
             _move.Update();
 
@@ -36,12 +38,14 @@ namespace PlayerNamespace
 
         public void Interact()
         {
+            _select.ForceSelect();
             _move.TryMove();
         }
         
         public void StopInteracting()
         {
             _move.StopMoving();
+            _select.StopSelecting();
         } 
     }
 }

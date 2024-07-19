@@ -1,10 +1,22 @@
 using ObjectsNamespace;
+using UnityEngine;
 
 namespace PlayerNamespace
 {
     public class PlayerSelectObject
     {
         private ISelectable _currentSelectable;
+
+        public void ForceSelect()
+        {
+            ISelectable selectable = PlayerRaycast.Instance.RayCast<ISelectable>();
+
+            if (selectable == null) return;
+
+            NullSelectable();
+            _currentSelectable = selectable;
+            _currentSelectable.Select();
+        }
 
         public void Update()
         {
@@ -14,6 +26,7 @@ namespace PlayerNamespace
 
             if (selectable == _currentSelectable) return;
 
+            NullSelectable();
             _currentSelectable = selectable;
             _currentSelectable.Select();
         }
@@ -24,6 +37,11 @@ namespace PlayerNamespace
 
             _currentSelectable.Deselect();
             _currentSelectable = null;
+        }
+
+        public void StopSelecting()
+        {
+            _currentSelectable.Deselect();
         }
     }
 }
