@@ -8,8 +8,8 @@ namespace ObjectsNamespace
         [Header("Moveable params:")]
         [SerializeField] private RaycastSortingLayer _sortingLayer;
 
-        private float _scaleRatio = 1.1f; 
-        private float _scaleTime = 0.3f; 
+        private float _scaleRatio = 1.05f; 
+        private float _scaleTime = 0.2f; 
 
         private Vector3 _startOffset;
 
@@ -46,7 +46,7 @@ namespace ObjectsNamespace
         /// (is not the same as "Physics Layers Sorting")
         /// </summary>
         /// <returns>Vector3.zero with Z offset</returns>
-        protected Vector3 GetSortingOffset() => Vector3.forward * (int)_sortingLayer;
+        protected Vector3 GetSortingOffset() => Vector3.forward * -(int)_sortingLayer;
 
         public virtual void LayDown()
         {

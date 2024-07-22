@@ -50,8 +50,14 @@ TagManager:
   - name: Enemy
     uniqueID: 790369333
     locked: 0
-  - name: UI
+  - name: EnergySeeker
     uniqueID: 903996639
+    locked: 0
+  - name: BackPack
+    uniqueID: 2588774579
+    locked: 0
+  - name: Material
+    uniqueID: 1637546659
     locked: 0
   - name: Cursor
     uniqueID: 1056656067
