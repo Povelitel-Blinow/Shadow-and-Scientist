@@ -11,7 +11,7 @@ namespace SmallPlayerNamespace
 
         public void Init()
         {
-            Debug.Log("Inited");
+        
         }
 
         private void Update()

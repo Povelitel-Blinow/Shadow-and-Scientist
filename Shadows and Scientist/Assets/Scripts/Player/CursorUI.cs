@@ -17,7 +17,7 @@ namespace CursorNamespace
             if (Instance == null)
             {
                 Instance = this;
-                //Cursor.visible = false;
+                Cursor.visible = false;
                 SetCursor(CursorType.NoInteraction);
                 return;
             }
@@ -40,7 +40,7 @@ namespace CursorNamespace
 
         private void Update()
         {
-            //Cursor.visible = false;
+            Cursor.visible = false;
             transform.position = PlayerInput.Instance.GetMousePos();
         } 
     }

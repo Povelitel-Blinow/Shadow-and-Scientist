@@ -3,13 +3,11 @@ using UnityEngine;
 
 namespace MaterialNamespace
 {
-    public class Metarial : Moveable
+    public class Metarial : MonoBehaviour
     {
         [SerializeField] private MaterialType _type;
 
         public MaterialType MaterialType => _type;
-
-
     }
 
     public enum MaterialType

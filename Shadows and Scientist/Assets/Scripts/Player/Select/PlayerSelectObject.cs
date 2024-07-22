@@ -41,6 +41,8 @@ namespace PlayerNamespace
 
         public void StopSelecting()
         {
+            if(_currentSelectable == null) return;
+
             _currentSelectable.Deselect();
         }
     }

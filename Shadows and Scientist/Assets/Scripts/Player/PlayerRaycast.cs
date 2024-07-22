@@ -4,6 +4,9 @@ namespace PlayerNamespace
 {
     public class PlayerRaycast : MonoBehaviour
     {
+        [SerializeField] private LayerMask _layerMask;
+        [SerializeField] private float _distance;
+
         public static PlayerRaycast Instance { get; private set; }
 
         public void Init()
@@ -25,7 +28,7 @@ namespace PlayerNamespace
         {
             Ray ray = PlayerInput.Instance.GetScreenPointRay();
 
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, _distance, _layerMask);
 
             T required = default;
 

@@ -5,6 +5,7 @@ namespace ObjectsNamespace
 {
     public class Moveable : MonoBehaviour, ISelectable
     {
+        [Header("Moveable params:")]
         [SerializeField] private RaycastSortingLayer _sortingLayer;
 
         private float _scaleRatio = 1.1f; 
@@ -12,12 +13,16 @@ namespace ObjectsNamespace
 
         private Vector3 _startOffset;
 
-        public virtual void PickUp(Vector3 position)
+        public void PickUp(Vector3 position)
         {
             _startOffset = position - transform.position;
+
+            OnPickUp();
         }
 
-        public virtual void Move(Vector3 position)
+        protected virtual void OnPickUp() { }
+
+        public void Move(Vector3 position)
         {
             Vector3 movement = position - _startOffset;
 
@@ -28,15 +33,28 @@ namespace ObjectsNamespace
             float newY = Mathf.Clamp(movement.y,
                 Map.Instance.VerticalBorders.x,
                 Map.Instance.VerticalBorders.y);
-            
 
-            transform.position = new Vector3(newX, newY, (int)_sortingLayer);
+            transform.position = new Vector3(newX, newY, 0) + GetSortingOffset();
+
+            OnMove();
         }
+
+        protected virtual void OnMove() { }
+
+        /// <summary>
+        /// Returns Z offset which is used to sort moveable object by raycast layers 
+        /// (is not the same as "Physics Layers Sorting")
+        /// </summary>
+        /// <returns>Vector3.zero with Z offset</returns>
+        protected Vector3 GetSortingOffset() => Vector3.forward * (int)_sortingLayer;
 
         public virtual void LayDown()
         {
             _startOffset = Vector3.zero;
+            OnLayDown();
         }
+
+        protected virtual void OnLayDown() { }
 
         public void Select()
         {
@@ -57,10 +75,10 @@ namespace ObjectsNamespace
             transform.DOKill();
         }
 
-        private enum RaycastSortingLayer
+        protected enum RaycastSortingLayer
         {
-            Material = -1,
-            Objects
+            Objects = 0,
+            Material = 1
         }
     }
 }
