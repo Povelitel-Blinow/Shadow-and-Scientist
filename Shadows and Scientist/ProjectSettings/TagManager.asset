@@ -14,8 +14,8 @@ TagManager:
   - Player
   - Wall
   - InWorldUI
-  - Objects
-  - Materials
+  - 
+  - 
   - Slot
   - 
   - 
@@ -50,11 +50,17 @@ TagManager:
   - name: Enemy
     uniqueID: 790369333
     locked: 0
+  - name: SmallPlayerUI
+    uniqueID: 3789797071
+    locked: 0
   - name: EnergySeeker
     uniqueID: 903996639
     locked: 0
   - name: BackPack
     uniqueID: 2588774579
+    locked: 0
+  - name: Window
+    uniqueID: 4106169793
     locked: 0
   - name: Material
     uniqueID: 1637546659

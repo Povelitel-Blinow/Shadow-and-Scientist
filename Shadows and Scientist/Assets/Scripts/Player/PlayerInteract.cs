@@ -8,11 +8,13 @@ namespace PlayerNamespace
     {
         private PlayerMoveObject _move;
         private PlayerSelectObject _select;
+        private PlayerClick _click;
 
         public void Init()
         {
             _move = new PlayerMoveObject();
             _select = new PlayerSelectObject();
+            _click = new PlayerClick();
         }
 
         public void UpdateInteract()
@@ -39,6 +41,7 @@ namespace PlayerNamespace
         public void Interact()
         {
             _select.ForceSelect();
+            _click.TryClick();
             _move.TryMove();
         }
         

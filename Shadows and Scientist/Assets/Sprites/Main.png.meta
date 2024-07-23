@@ -1151,6 +1151,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: VerstakUI
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 751
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27555e9377ff6854dac2b9be1d4b8198
+      internalID: 1716299509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Verstak
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 896
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e42cf195ea1c34aba81c1cf353a6f1
+      internalID: -866687814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoneyCraftOff
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 896
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f68bb31542c56343b9b0733d5233e7f
+      internalID: -1298040185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoneyCraftOn
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b22a907d18609b499eccdd17417081e
+      internalID: 234718465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractButton
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 903
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7ad21b038ae0144853534efcf3f7f8
+      internalID: -1533401188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedButtonPlate
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 814
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119ccb8c6ec23d44fba605baa5d8e0a4
+      internalID: 1641885722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedButton
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 816
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4165d3e40c7dd684e8c56ead52ffd7f2
+      internalID: 851286295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSlideButton
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 851
+        width: 9
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f88cf63886a05f4bac77dbedc342bda
+      internalID: -1462225889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1181,11 +1349,14 @@ TextureImporter:
       EnergySeeker: 659540281
       Glass: 1379734056
       Gold: 1215221471
+      InteractButton: -1533401188
       LightGeneratorUI: -23756317
       LightOff: -1294806715
       LightOn: -818065084
       LineTimer: -566947423
       Metall: 702632576
+      MoneyCraftOff: -1298040185
+      MoneyCraftOn: 234718465
       OvenOff: 1140517140
       OvenOn: -1042464679
       OvenUI: -933193850
@@ -1198,6 +1369,8 @@ TextureImporter:
       R2: 2040672044
       R3: -771581323
       R4: -1647799294
+      RedButton: 851286295
+      RedButtonPlate: 1641885722
       S1: 469379669
       S2: -155072484
       S3: -482232189
@@ -1211,6 +1384,9 @@ TextureImporter:
       TocarOn: 1879880048
       TocarUI: -768952398
       Torch: -1097363651
+      Verstak: -866687814
+      VerstakUI: 1716299509
+      WindowSlideButton: -1462225889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

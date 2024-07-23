@@ -75,10 +75,11 @@ namespace ObjectsNamespace
             transform.DOKill();
         }
 
-        protected enum RaycastSortingLayer
+        private enum RaycastSortingLayer
         {
-            Objects = 0,
-            Material = 1
+            Object = 0,
+            Window = 1,
+            Material = 2
         }
     }
 }

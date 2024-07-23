@@ -8,6 +8,7 @@ namespace SmallPlayerNamespace
     {
         [SerializeField] private PlayerInput _input;
         [SerializeField] private PlayerBody _body;
+        [SerializeField] private PlayerSurrounding _surroundings;
 
         public void Init()
         {
@@ -17,6 +18,9 @@ namespace SmallPlayerNamespace
         private void Update()
         {
             _body.Move(_input.GetMoveInput());
+
+            if(_input.GetIsInteract())
+                _surroundings.TryInteract();
         }
 
         private void OnValidate()

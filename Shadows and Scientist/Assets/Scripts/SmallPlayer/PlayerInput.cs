@@ -17,5 +17,7 @@ namespace SmallPlayerNamespace
 
             return input;
         }
+
+        public bool GetIsInteract() => Input.GetKeyDown(KeyCode.E);
     }
 }

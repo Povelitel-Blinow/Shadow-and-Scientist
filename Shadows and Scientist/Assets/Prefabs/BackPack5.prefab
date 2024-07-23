@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3299471429233617132}
   - component: {fileID: 2862769361364640674}
   - component: {fileID: 8623238220598407464}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: BackPack5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1706192717
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 2043455183, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
