@@ -1,3 +1,4 @@
+using DG.Tweening;
 using ObjectsNamespace;
 using SlotNamespace;
 using UnityEngine;
@@ -59,6 +60,11 @@ namespace MaterialNamespace
             _slot.PutOut();
 
             _slot = null;
+        }
+
+        private void OnDestroy()
+        {
+            transform.DOKill();
         }
     }
 }

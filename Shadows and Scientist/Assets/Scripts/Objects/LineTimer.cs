@@ -12,7 +12,7 @@ namespace CraftNamespace
 
         public void SetLine(float ratio)
         {
-            _line.transform.DOScale(ratio, _followTime);
+            _line.transform.DOScale(new Vector3(1,1,ratio), _followTime);
         }
 
         private void OnDestroy()

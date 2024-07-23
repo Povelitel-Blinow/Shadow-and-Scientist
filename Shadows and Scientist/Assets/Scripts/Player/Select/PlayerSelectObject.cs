@@ -1,5 +1,4 @@
 using ObjectsNamespace;
-using UnityEngine;
 
 namespace PlayerNamespace
 {

@@ -1,6 +1,3 @@
-using UnityEngine;
-using WindowNamespace;
-
 namespace PlayerNamespace
 {
     public class PlayerClick
@@ -11,7 +8,6 @@ namespace PlayerNamespace
 
             if (clickable == null) return;
             
-            Debug.Log("Clicked");
             clickable.Click();
         }
     }

@@ -5,18 +5,21 @@ namespace SlotNamespace
 {
     public abstract class Slot : MonoBehaviour
     {
-        [SerializeField] private int _layer;
-
         protected InSlotPutable _slotPutable;
         protected bool _isVacant => _slotPutable == null;
+
+        public InSlotPutable InSlot => _slotPutable;
 
         public virtual bool TryPut(InSlotPutable inSlotPutable) => false;
 
         public virtual void PutOut() { }
 
-        private void OnValidate()
+        public virtual void VoidSlot()
         {
-            gameObject.layer = _layer;
+            if (_slotPutable == null) return;
+
+            Destroy(_slotPutable.gameObject);
+            _slotPutable = null;
         }
     }
 }

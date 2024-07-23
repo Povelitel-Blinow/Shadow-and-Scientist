@@ -14,7 +14,7 @@ TagManager:
   - Player
   - Wall
   - InWorldUI
-  - 
+  - Button
   - 
   - Slot
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: EnergySeeker
     uniqueID: 903996639
+    locked: 0
+  - name: Materializer
+    uniqueID: 724887989
     locked: 0
   - name: BackPack
     uniqueID: 2588774579

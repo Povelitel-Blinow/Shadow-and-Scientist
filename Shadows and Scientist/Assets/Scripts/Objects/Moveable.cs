@@ -58,11 +58,13 @@ namespace ObjectsNamespace
 
         public void Select()
         {
+            return;
             transform.DOScale(new Vector3(_scaleRatio, _scaleRatio, 1), _scaleTime);
         }
 
         public void Deselect()
         {
+            return;
             //Smb might call it stupidity. I call it a solution :D
             //(It actually fixes a bug)
             if (_startOffset != Vector3.zero) return;

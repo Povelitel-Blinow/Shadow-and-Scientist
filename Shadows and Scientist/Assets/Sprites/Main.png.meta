@@ -1319,6 +1319,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Materializer
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 704
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebecd7b318f9174da01aadc6aab144a
+      internalID: -1461645241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tape
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 695
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f10c86ecd5ab9408aa774def9e2d86
+      internalID: -586767242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrokenButton
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 710
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa6bc4e956d93a4380a69ec9eb92a72
+      internalID: -1225211803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slider2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 686
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409aacc85f4648d4795a0bcde9496843
+      internalID: -1760836212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slider1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 685
+        width: 1
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4042c1f26ba28d478e0e32270812b54
+      internalID: 1494578474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1338,6 +1443,7 @@ TextureImporter:
       BP3: 2091692569
       BP4: -801517305
       BP5: 2043455183
+      BrokenButton: -1225211803
       Button: 1262914800
       Coin: 269089775
       Colb: 1433415592
@@ -1354,6 +1460,7 @@ TextureImporter:
       LightOff: -1294806715
       LightOn: -818065084
       LineTimer: -566947423
+      Materializer: -1461645241
       Metall: 702632576
       MoneyCraftOff: -1298040185
       MoneyCraftOn: 234718465
@@ -1379,7 +1486,10 @@ TextureImporter:
       SR2: -981087861
       SR3: 1817677660
       SR4: 602222791
+      Slider1: 1494578474
+      Slider2: -1760836212
       SteelPlate: 1043183170
+      Tape: -586767242
       TocarOff: -1705200708
       TocarOn: 1879880048
       TocarUI: -768952398

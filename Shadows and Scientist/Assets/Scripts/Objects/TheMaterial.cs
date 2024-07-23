@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MaterialNamespace
 {
-    public class Metarial : MonoBehaviour
+    public class TheMaterial : MonoBehaviour
     {
         [SerializeField] private MaterialType _type;
 
