@@ -8,8 +8,8 @@ namespace ObjectsNamespace
         [Header("Moveable params:")]
         [SerializeField] private RaycastSortingLayer _sortingLayer;
 
-        private float _scaleRatio = 1.05f; 
-        private float _scaleTime = 0.2f; 
+       // private float _scaleRatio = 1.05f; 
+       // private float _scaleTime = 0.2f; 
 
         private Vector3 _startOffset;
 
@@ -59,7 +59,7 @@ namespace ObjectsNamespace
         public void Select()
         {
             return;
-            transform.DOScale(new Vector3(_scaleRatio, _scaleRatio, 1), _scaleTime);
+            //transform.DOScale(new Vector3(_scaleRatio, _scaleRatio, 1), _scaleTime);
         }
 
         public void Deselect()
@@ -67,9 +67,9 @@ namespace ObjectsNamespace
             return;
             //Smb might call it stupidity. I call it a solution :D
             //(It actually fixes a bug)
-            if (_startOffset != Vector3.zero) return;
+            //if (_startOffset != Vector3.zero) return;
 
-            transform.DOScale(1, _scaleTime);
+            //transform.DOScale(1, _scaleTime);
         }
 
         private void OnDestroy()

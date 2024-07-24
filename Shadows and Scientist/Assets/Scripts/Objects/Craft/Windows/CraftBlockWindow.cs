@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace WindowNamespace
 {
-    public class CraftBlockWindow : MonoBehaviour
+    public abstract class CraftBlockWindow : MonoBehaviour
     {
         public void ShowUp()
         {

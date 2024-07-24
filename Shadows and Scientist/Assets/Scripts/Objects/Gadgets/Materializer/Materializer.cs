@@ -23,8 +23,6 @@ namespace GadgetNamespace
         {
             MaterialType material = _slider.GetMaterialType();
 
-            if (material == null) return;
-
             StartCoroutine(Materializing(material));
         }
 

@@ -11,8 +11,6 @@ namespace GadgetNamespace
 
         public void Spawn()
         {
-            
-
             _slot.PutInObject(_energyPrefab);
         }
     }

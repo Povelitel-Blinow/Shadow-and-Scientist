@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace PlayerNamespace
 {
     public class PlayerClick
@@ -7,7 +9,9 @@ namespace PlayerNamespace
             IClickable clickable = PlayerRaycast.Instance.RayCast<IClickable>();
 
             if (clickable == null) return;
-            
+
+            Debug.Log(2);
+
             clickable.Click();
         }
     }

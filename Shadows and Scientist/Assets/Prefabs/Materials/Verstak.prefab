@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1499285888419821216}
   - component: {fileID: 6151556901803351999}
-  - component: {fileID: 864075707960497774}
   - component: {fileID: 6970160442480081649}
   m_Layer: 8
-  m_Name: Energy
+  m_Name: Verstak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,19 +79,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &864075707960497774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2226151403320294006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f37b285f76f82634991e9e2ae31f6852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _type: 0
 --- !u!114 &6970160442480081649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 1637546659
   m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1583345819, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
+  m_Sprite: {fileID: -866687814, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

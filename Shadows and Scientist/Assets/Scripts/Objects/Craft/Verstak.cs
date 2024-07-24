@@ -1,6 +1,6 @@
 namespace CraftNamespace 
 {
-    public class Verstack : CraftingBlock
+    public class Verstak : CraftingBlock
     {
 
     }

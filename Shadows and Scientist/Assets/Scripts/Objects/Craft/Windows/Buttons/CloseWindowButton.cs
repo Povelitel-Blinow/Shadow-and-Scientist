@@ -6,9 +6,8 @@ namespace WindowNamespace
     {
         [SerializeField] private CraftBlockWindow _window;
 
-        public override void Click()
+        public override void OnClick()
         {
-            Debug.Log("Close");
             _window.Hide();
         }
     }

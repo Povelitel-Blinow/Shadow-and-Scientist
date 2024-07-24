@@ -11,7 +11,12 @@ namespace WindowNamespace
 
         [SerializeField] private float _selectTime;
 
-        public abstract void Click();
+        public void Click()
+        {
+            OnClick();
+        }
+
+        public virtual void OnClick() { }
 
         public void Deselect()
         {
