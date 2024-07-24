@@ -1,15 +1,11 @@
 using UnityEngine;
-using DG.Tweening;
 
-namespace ObjectsNamespace
+namespace InWorldUINamespace
 {
-    public class Moveable : MonoBehaviour, ISelectable
+    public class Moveable : MonoBehaviour, IMoveable
     {
         [Header("Moveable params:")]
         [SerializeField] private RaycastSortingLayer _sortingLayer;
-
-       // private float _scaleRatio = 1.05f; 
-       // private float _scaleTime = 0.2f; 
 
         private Vector3 _startOffset;
 
@@ -55,33 +51,5 @@ namespace ObjectsNamespace
         }
 
         protected virtual void OnLayDown() { }
-
-        public void Select()
-        {
-            return;
-            //transform.DOScale(new Vector3(_scaleRatio, _scaleRatio, 1), _scaleTime);
-        }
-
-        public void Deselect()
-        {
-            return;
-            //Smb might call it stupidity. I call it a solution :D
-            //(It actually fixes a bug)
-            //if (_startOffset != Vector3.zero) return;
-
-            //transform.DOScale(1, _scaleTime);
-        }
-
-        private void OnDestroy()
-        {
-            transform.DOKill();
-        }
-
-        private enum RaycastSortingLayer
-        {
-            Object = 0,
-            Window = 1,
-            Material = 2
-        }
     }
 }

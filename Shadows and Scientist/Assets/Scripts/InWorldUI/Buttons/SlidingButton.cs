@@ -1,15 +1,17 @@
 using DG.Tweening;
-using ObjectsNamespace;
+using GameDesign;
 using UnityEngine;
 
-namespace WindowNamespace
+namespace InWorldUINamespace
 {
-    public abstract class WindowButton : MonoBehaviour, ISelectable, IClickable
+    public abstract class SlidingButton : MonoBehaviour, IClickable, ISelectable
     {
+        [SerializeField] private SlideButtonSettings _settings;
+
         [SerializeField] private Transform _defaultPos;
         [SerializeField] private Transform _selectedPos;
 
-        [SerializeField] private float _selectTime;
+        [SerializeField] private float _selectTime => _settings.SelectTime;
 
         public void Click()
         {

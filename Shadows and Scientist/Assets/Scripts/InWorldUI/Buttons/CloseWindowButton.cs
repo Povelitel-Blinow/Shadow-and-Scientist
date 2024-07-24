@@ -1,8 +1,9 @@
 using UnityEngine;
+using WindowNamespace;
 
-namespace WindowNamespace
+namespace InWorldUINamespace
 {
-    public class CloseWindowButton : WindowButton
+    public class CloseWindowButton : SlidingButton
     {
         [SerializeField] private CraftBlockWindow _window;
 

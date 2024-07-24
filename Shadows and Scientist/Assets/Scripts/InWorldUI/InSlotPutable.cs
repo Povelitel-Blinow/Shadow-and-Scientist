@@ -1,5 +1,5 @@
 using DG.Tweening;
-using ObjectsNamespace;
+using InWorldUINamespace;
 using SlotNamespace;
 using UnityEngine;
 

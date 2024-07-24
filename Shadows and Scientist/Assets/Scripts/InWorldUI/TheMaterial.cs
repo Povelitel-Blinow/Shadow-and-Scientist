@@ -1,4 +1,4 @@
-using ObjectsNamespace;
+using InWorldUINamespace;
 using UnityEngine;
 
 namespace MaterialNamespace

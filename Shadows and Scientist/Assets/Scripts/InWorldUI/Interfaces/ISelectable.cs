@@ -1,4 +1,4 @@
-namespace ObjectsNamespace
+namespace InWorldUINamespace
 {
     public interface ISelectable
     {

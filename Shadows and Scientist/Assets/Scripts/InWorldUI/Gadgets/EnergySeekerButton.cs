@@ -1,15 +1,14 @@
 using GadgetNamespace;
 using UnityEngine;
 
-namespace WindowNamespace
+namespace InWorldUINamespace
 {
-    public class EnergySeekerButton : MonoBehaviour, IClickable
+    public class EnergySeekerButton : Button
     {
         [SerializeField] private EnergySeeker _energySeeker;
 
-        public void Click()
+        public override void OnClick()
         {
-            Debug.Log(1);
             _energySeeker.Spawn();
         }
     }

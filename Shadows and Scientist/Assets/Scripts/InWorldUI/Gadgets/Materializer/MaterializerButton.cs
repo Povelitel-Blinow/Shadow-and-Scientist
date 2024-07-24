@@ -1,12 +1,13 @@
 using UnityEngine;
+using InWorldUINamespace;
 
 namespace GadgetNamespace
 {
-    public class MaterializerButton : MonoBehaviour, IClickable
+    public class MaterializerButton : Button
     {
         [SerializeField] private Materializer _materializer;
 
-        public void Click()
+        public override void OnClick()
         {
             _materializer.TryMaterialize();    
         }

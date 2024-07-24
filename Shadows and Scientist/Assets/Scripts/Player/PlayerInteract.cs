@@ -1,5 +1,5 @@
 using CursorNamespace;
-using ObjectsNamespace;
+using InWorldUINamespace;
 using UnityEngine;
 
 namespace PlayerNamespace
@@ -40,7 +40,6 @@ namespace PlayerNamespace
 
         public void Interact()
         {
-            _select.ForceSelect();
             _click.TryClick();
             _move.TryMove();
         }
@@ -48,7 +47,6 @@ namespace PlayerNamespace
         public void StopInteracting()
         {
             _move.StopMoving();
-            _select.StopSelecting();
         } 
     }
 }
