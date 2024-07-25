@@ -7,13 +7,14 @@ namespace CraftNamespace
     public class CraftingBlock : MonoBehaviour
     {
         [SerializeField] private CraftBlockWindow _craftWindowPrefab;
+        [SerializeField] private CraftBlockAnimator _animation;
 
         private CraftBlockWindow _window;
 
         private void Start()
         {
             _window = Instantiate(_craftWindowPrefab);
-            _window.Init();
+            _window.Init(_animation);
         }
 
         public void Interact()

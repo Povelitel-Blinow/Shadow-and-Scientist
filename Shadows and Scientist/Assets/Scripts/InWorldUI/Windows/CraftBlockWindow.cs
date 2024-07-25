@@ -1,11 +1,14 @@
+using CraftNamespace;
 using UnityEngine;
 
 namespace WindowNamespace
 {
     public abstract class CraftBlockWindow : MonoBehaviour
     {
-        public void Init()
+        protected CraftBlockAnimator _animator;
+        public void Init(CraftBlockAnimator animator)
         {
+            _animator = animator;
             gameObject.SetActive(false);
         }
 

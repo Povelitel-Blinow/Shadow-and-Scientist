@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _craftWindowPrefab: {fileID: 4961888474917014211, guid: 823f1515b6d80d945a48c3d476d38a3a, type: 3}
+  _animation: {fileID: 0}
 --- !u!1 &4212855084959910333
 GameObject:
   m_ObjectHideFlags: 0

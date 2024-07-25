@@ -28,5 +28,6 @@ namespace MaterialNamespace
         Capsule,
         EnergyCapsule,
         Steel,
+        Coin
     }
 }

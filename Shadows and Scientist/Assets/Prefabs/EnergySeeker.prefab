@@ -110,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _energyPrefab: {fileID: 6970160442480081649, guid: c22fd9b9e845af049b4b8d79062471ed, type: 3}
   _slot: {fileID: 3990267068837254446}
+  _line: {fileID: 1300367931745076396}
 --- !u!1 &6574340099093823188
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,6 +272,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
+--- !u!114 &1300367931745076396 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 993395393822470871, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
+  m_PrefabInstance: {fileID: 2288649286523926139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8751bf757de59d44db8beb182fd78b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3207770309197845670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3694817014619955933, guid: ce75537870121d74b91c6cd3f533723f, type: 3}

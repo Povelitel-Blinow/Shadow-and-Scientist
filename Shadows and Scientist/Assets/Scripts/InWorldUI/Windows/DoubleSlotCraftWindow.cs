@@ -43,13 +43,18 @@ namespace WindowNamespace
         {
             float timer = 0;
 
+            _animator?.SetIsWorking(true);
+
             while(timer < time)
             {
                 timer += Time.deltaTime;
                 _lineTimer.SetLine(timer/time);
 
-                if(CheckMaterials() == false)
+                if (CheckMaterials() == false)
+                {
+                    FinishCrafting();
                     yield break;
+                }
 
                 yield return new WaitForEndOfFrame();
             }
@@ -57,6 +62,8 @@ namespace WindowNamespace
             _inputSlot1.VoidSlot();
             _inputSlot2.VoidSlot();
             _outputSlot.PutInObject(result);
+
+            FinishCrafting();
         }
 
         private bool CheckMaterials()
@@ -65,6 +72,12 @@ namespace WindowNamespace
             if (_inputSlot2.Material == null) return false;
 
             return true;
+        }
+
+        private void FinishCrafting()
+        {
+            _lineTimer.SetLine(0);
+            _animator?.SetIsWorking(false);
         }
 
         [System.Serializable]

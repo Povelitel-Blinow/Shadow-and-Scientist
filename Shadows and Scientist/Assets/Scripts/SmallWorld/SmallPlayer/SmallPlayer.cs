@@ -1,3 +1,4 @@
+using SmallWorldNamespace;
 using UnityEngine;
 
 namespace SmallPlayerNamespace
@@ -9,6 +10,7 @@ namespace SmallPlayerNamespace
         [SerializeField] private PlayerInput _input;
         [SerializeField] private PlayerBody _body;
         [SerializeField] private PlayerSurrounding _surroundings;
+        [SerializeField] private SmallEnergySeeker _energySeeker;
 
         public void Init()
         {
@@ -17,6 +19,7 @@ namespace SmallPlayerNamespace
 
         private void Update()
         {
+            _energySeeker.UpdateSeeker();
             _body.Move(_input.GetMoveInput());
 
             if(_input.GetIsInteract())
