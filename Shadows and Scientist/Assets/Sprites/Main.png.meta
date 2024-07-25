@@ -926,7 +926,7 @@ TextureImporter:
         serializedVersion: 2
         x: 256
         y: 800
-        width: 50
+        width: 51
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -945,7 +945,7 @@ TextureImporter:
       name: LineTimer
       rect:
         serializedVersion: 2
-        x: 322
+        x: 320
         y: 802
         width: 9
         height: 44
@@ -1391,7 +1391,7 @@ TextureImporter:
         width: 16
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1412,7 +1412,7 @@ TextureImporter:
         width: 1
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1420,6 +1420,27 @@ TextureImporter:
       bones: []
       spriteID: c4042c1f26ba28d478e0e32270812b54
       internalID: 1494578474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VerstakWindow
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 688
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032a5aa50a7096f49bb31173b0bf5629
+      internalID: 1520341662
       vertices: []
       indices: 
       edges: []
@@ -1496,6 +1517,7 @@ TextureImporter:
       Torch: -1097363651
       Verstak: -866687814
       VerstakUI: 1716299509
+      VerstakWindow: 1520341662
       WindowSlideButton: -1462225889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

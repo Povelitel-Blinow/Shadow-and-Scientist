@@ -14,6 +14,7 @@ namespace InWorldUINamespace
 
     public enum RaycastSortingLayer
     {
+        Wall = -1,
         Object = 0,
         SlidingButton = 1,
         Window = 2,

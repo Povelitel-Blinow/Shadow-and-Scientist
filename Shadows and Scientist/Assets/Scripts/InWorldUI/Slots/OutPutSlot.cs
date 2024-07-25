@@ -8,9 +8,9 @@ namespace SlotNamespace
         {
             if (_isVacant == false) return;
 
-            InSlotPutable energy = Instantiate(inSlotPutablePrefab);
+            InSlotPutable spawned = Instantiate(inSlotPutablePrefab);
 
-            _slotPutable = energy;
+            _slotPutable = spawned;
             _slotPutable.InitByOutputSlot(this);
         }
 

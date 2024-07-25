@@ -4,14 +4,22 @@ using UnityEngine;
 
 namespace CraftNamespace
 {
-    public abstract class CraftingBlock : MonoBehaviour
+    public class CraftingBlock : MonoBehaviour
     {
-        [SerializeField] private CraftBlockWindow _craftWindow;
+        [SerializeField] private CraftBlockWindow _craftWindowPrefab;
+
+        private CraftBlockWindow _window;
+
+        private void Start()
+        {
+            _window = Instantiate(_craftWindowPrefab);
+            _window.Init();
+        }
 
         public void Interact()
         {
             Debug.Log("Interact " + gameObject.name);
-            _craftWindow.ShowUp();
+            _window.ShowUp();
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

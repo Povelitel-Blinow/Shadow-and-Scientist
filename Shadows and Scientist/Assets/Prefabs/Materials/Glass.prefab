@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _type: 3
+  _inSlotPutable: {fileID: 6970160442480081649}
 --- !u!114 &6970160442480081649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df281f02704aa544a7f1990bd84479b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sortingLayer: 2
+  _sortingLayer: 4
   _slotLayer:
     serializedVersion: 2
     m_Bits: 2048

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace MaterialNamespace
 {
-    public class InSlotPutable : Moveable
+    public class InSlotPutable : Moveable, IInSlopPutable
     {
         [Header("InSlotPutable params")]
         [SerializeField] private LayerMask _slotLayer;

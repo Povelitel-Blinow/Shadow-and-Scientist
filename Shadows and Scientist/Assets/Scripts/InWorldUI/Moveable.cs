@@ -42,12 +42,16 @@ namespace InWorldUINamespace
         /// (is not the same as "Physics Layers Sorting")
         /// </summary>
         /// <returns>Vector3.zero with Z offset</returns>
-        protected Vector3 GetSortingOffset() => Vector3.forward * -(int)_sortingLayer;
+        protected Vector3 GetSortingOffset() => Vector3.forward * -(int)GetSortingLayer();
 
-        public virtual void LayDown()
+        protected virtual RaycastSortingLayer GetSortingLayer() => _sortingLayer;
+
+        public void LayDown()
         {
             _startOffset = Vector3.zero;
             OnLayDown();
+
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0) + GetSortingOffset();
         }
 
         protected virtual void OnLayDown() { }
