@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 1035055039
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1140517140, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
+  m_Sprite: {fileID: -1705200708, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 2028077482703619843}
   - component: {fileID: 9022367283462974108}
   m_Layer: 8
-  m_Name: Oven
+  m_Name: Tokar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8010b15483620e2478650a221e8a372e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _craftWindowPrefab: {fileID: 6558355787924547598, guid: d5cb0ef94222d6c4b9d5a84a679e5f5f, type: 3}
+  _craftWindowPrefab: {fileID: 8954332143726109009, guid: 0766c4f78e999d546a9253f142226abf, type: 3}
   _animation: {fileID: 6979180341192494982}
   _trigger: {fileID: 4259063039612130214}
   _floor: {fileID: 2028077482703619843}
@@ -427,10 +427,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 2124875374852890040}
-  _inactiveSprite: {fileID: 1140517140, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
+  _inactiveSprite: {fileID: -1705200708, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
   _workingSprite:
-  - {fileID: -1042464679, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
-  _spriteChangeDelay: 0.5
+  - {fileID: -1705200708, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
+  - {fileID: 1879880048, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
+  _spriteChangeDelay: 0.2
   _timer: {fileID: 6872883138451727057}
 --- !u!114 &1596789525006374132
 MonoBehaviour:
@@ -645,14 +646,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6931842546009891373}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.28285706, y: -0.3242857, z: -1.4285713}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.3231, y: -0.282, z: -1.4285713}
   m_LocalScale: {x: 1.4285713, y: 1.4285713, z: 1.4285713}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4241789151581171402}
   m_Father: {fileID: 427008494199646935}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &6872883138451727057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,7 +741,7 @@ SpriteRenderer:
   m_SortingLayerID: 1637546659
   m_SortingLayer: 9
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1140517140, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
+  m_Sprite: {fileID: -1705200708, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

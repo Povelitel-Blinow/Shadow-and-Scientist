@@ -6,8 +6,10 @@ using UnityEngine;
 
 namespace WindowNamespace
 {
-    public class DefaultCraftWindow : CraftBlockWindow
+    public class MoneyMakerWindow : CraftBlockWindow
     {
+        //DRY? Nah, never heard of it 
+
         [SerializeField] private CraftSlot _inputSlot;
         [SerializeField] private OutPutSlot _outputSlot;
 
@@ -22,7 +24,7 @@ namespace WindowNamespace
             _inputSlot.OnPut += TryMake;
         }
 
-        private void  Start()
+        private void Start()
         {
             _inputSlot.OnPut += TryMake;
         }
@@ -33,7 +35,9 @@ namespace WindowNamespace
 
             if (_outputSlot.InSlot != null) return;
 
-            if (_inputSlot.Material.MaterialType != MaterialType.Metall) return;
+            if (_inputSlot.Material.MaterialType != MaterialType.Gold) return;
+
+            Debug.Log(1);
 
             StartCoroutine(Crafting());
         }
@@ -44,14 +48,14 @@ namespace WindowNamespace
             float timer = 0f;
             while (timer < _craftTime)
             {
-                if(_inputSlot.Material == null)
+                if (_inputSlot.Material == null)
                 {
                     _lineTimer.SetLine(0);
                     yield break;
                 }
 
                 timer += Time.deltaTime;
-                _lineTimer.SetLine(timer/_craftTime);
+                _lineTimer.SetLine(timer / _craftTime);
                 yield return new WaitForEndOfFrame();
             }
 

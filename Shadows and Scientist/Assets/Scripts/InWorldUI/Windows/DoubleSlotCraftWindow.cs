@@ -19,7 +19,13 @@ namespace WindowNamespace
         [Header("Crafting")]
         [SerializeField] private Recipe[] _recipes;
 
-        private void Awake()
+        private void OnEnable()
+        {
+            _inputSlot1.OnPut += TryMake;
+            _inputSlot2.OnPut += TryMake;
+        }
+
+        private void Start()
         {
             _inputSlot1.OnPut += TryMake;
             _inputSlot2.OnPut += TryMake;
@@ -83,6 +89,13 @@ namespace WindowNamespace
             if (_canWork == false)
                 Hide();
         }
+
+        private void OnDisable()
+        {
+            _inputSlot1.OnPut -= TryMake;
+            _inputSlot2.OnPut -= TryMake;
+        }
+
 
         [System.Serializable]
         private struct Recipe

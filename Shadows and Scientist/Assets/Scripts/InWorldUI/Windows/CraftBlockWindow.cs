@@ -30,8 +30,6 @@ namespace WindowNamespace
             _canWork = canWork;
             if(_canWork == false)
                 Hide();
-
-            Debug.Log(canWork);
         }
     }
 }

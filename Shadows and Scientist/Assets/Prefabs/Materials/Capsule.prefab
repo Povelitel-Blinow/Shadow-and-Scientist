@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37b285f76f82634991e9e2ae31f6852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: 5
+  _type: 4
   _inSlotPutable: {fileID: 6970160442480081649}
 --- !u!114 &6970160442480081649
 MonoBehaviour:
