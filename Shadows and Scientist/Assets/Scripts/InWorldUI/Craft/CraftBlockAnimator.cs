@@ -1,22 +1,59 @@
+using System.Collections;
 using UnityEngine;
 
 namespace CraftNamespace
 {
-    [RequireComponent(typeof(Animator))]
     public class CraftBlockAnimator : MonoBehaviour
     {
-        [SerializeField] private Animator _animator;
+        [SerializeField] private SpriteRenderer _renderer;
 
-        private const string IsWorking = "IsWorking";
+        [SerializeField] private Sprite _inactiveSprite;
+        [SerializeField] private Sprite[] _workingSprite;
+
+        [SerializeField] private float _spriteChangeDelay;
+
+        [Header("LineTimer")]
+        [SerializeField] private LineTimer _timer;
+
+        private bool _isWorking;
+
+        public void StopAnimating()
+        {
+            _timer.SetLine(0);
+            _isWorking = false;
+            StopAllCoroutines();
+            _renderer.sprite = _inactiveSprite;
+        }
+
+        public void SetLine(float ratio)
+        {
+            _timer.SetLine(ratio);
+        }
 
         public void SetIsWorking(bool isWorking)
         {
-            _animator.SetBool(IsWorking, isWorking);
+            _isWorking = isWorking;
+
+            if(isWorking == false)
+                _renderer.sprite = _inactiveSprite;
+
+            StartCoroutine(Working());
         }
 
-        private void OnValidate()
+        private IEnumerator Working()
         {
-            _animator ??= GetComponent<Animator>();
+            int index = 0;
+            while (_isWorking)
+            {
+                index++;
+                if(index >= _workingSprite.Length)
+                    index = 0;
+
+                _renderer.sprite = _workingSprite[index];
+
+                yield return new WaitForSeconds(_spriteChangeDelay);
+            }
+            _timer.SetLine(0);
         }
     }
 }

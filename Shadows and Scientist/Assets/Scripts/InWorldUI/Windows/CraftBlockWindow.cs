@@ -7,6 +7,7 @@ namespace WindowNamespace
     public abstract class CraftBlockWindow : MonoBehaviour
     {
         public Action<bool> OnWork;
+        public Action<float> OnLineTimerChange;
         protected bool _canWork = true;
 
         public void Init()

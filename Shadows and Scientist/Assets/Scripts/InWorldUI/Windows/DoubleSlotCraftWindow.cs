@@ -47,7 +47,9 @@ namespace WindowNamespace
             while(timer < time)
             {
                 timer += Time.deltaTime;
+
                 _lineTimer.SetLine(timer/time);
+                OnLineTimerChange?.Invoke(timer/time);
 
                 if (_canWork == false || CheckMaterials() == false)
                 {

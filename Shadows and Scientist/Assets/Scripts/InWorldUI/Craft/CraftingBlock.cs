@@ -22,6 +22,7 @@ namespace CraftNamespace
             _window = Instantiate(_craftWindowPrefab);
             _window.Init();
             _window.OnWork += SetIsWorking;
+            _window.OnLineTimerChange += OnTimerValueChanged;
 
             _floor.OnPickUpAction += OnPickUp;
             _floor.OnLayDownAction += OnLayDown;
@@ -29,7 +30,6 @@ namespace CraftNamespace
 
         private void Interact()
         {
-            Debug.Log("Interact " + gameObject.name);
             _window.ShowUp();
         }
 
@@ -41,11 +41,17 @@ namespace CraftNamespace
         private void OnPickUp()
         {
             _window.SetCanWork(false);
+            _animation.StopAnimating();
         }
 
         private void OnLayDown()
         {
             _window.SetCanWork(true);
+        }
+
+        private void OnTimerValueChanged(float ratio)
+        {
+            _animation.SetLine(ratio);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -68,6 +74,7 @@ namespace CraftNamespace
         {
             _trigger.OnInteract -= Interact;
             _window.OnWork -= SetIsWorking;
+            _window.OnLineTimerChange -= OnTimerValueChanged;
             _floor.OnPickUpAction -= OnPickUp;
             _floor.OnLayDownAction -= OnLayDown;
         }

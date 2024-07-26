@@ -252,7 +252,7 @@ MonoBehaviour:
   _recipes:
   - Material1: 1
     Material2: 3
-    Result: {fileID: 2028077482703619843, guid: 1a4337749ad950645a78bb39b82a98ac, type: 3}
+    Result: {fileID: 2028077482703619843, guid: 939a49dcba2df044aa00ddca9b1e7aea, type: 3}
     CraftTime: 1
   - Material1: 1
     Material2: 1
