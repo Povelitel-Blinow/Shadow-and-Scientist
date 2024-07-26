@@ -1,14 +1,16 @@
 using CraftNamespace;
+using System;
 using UnityEngine;
 
 namespace WindowNamespace
 {
     public abstract class CraftBlockWindow : MonoBehaviour
     {
-        protected CraftBlockAnimator _animator;
-        public void Init(CraftBlockAnimator animator)
+        public Action<bool> OnWork;
+        protected bool _canWork = true;
+
+        public void Init()
         {
-            _animator = animator;
             gameObject.SetActive(false);
         }
 
@@ -20,6 +22,15 @@ namespace WindowNamespace
         public void Hide()
         {
             gameObject.SetActive(false);
+        }
+
+        public void SetCanWork(bool canWork)
+        {
+            _canWork = canWork;
+            if(_canWork == false)
+                Hide();
+
+            Debug.Log(canWork);
         }
     }
 }

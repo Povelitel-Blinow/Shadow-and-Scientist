@@ -1,10 +1,11 @@
 using InWorldUINamespace;
+using UnityEngine;
 
 namespace PlayerNamespace
 {
     public class PlayerMoveObject
     {
-        public Moveable CurrentMoving { get; private set; } = null;
+        public IMoveable CurrentMoving { get; private set; } = null;
 
         public void Update()
         {
@@ -15,7 +16,7 @@ namespace PlayerNamespace
 
         public void TryMove()
         {
-            Moveable moveable = PlayerRaycast.Instance.RayCast<Moveable>();
+            IMoveable moveable = PlayerRaycast.Instance.RayCast<IMoveable>();
 
             if (moveable == null)
             {

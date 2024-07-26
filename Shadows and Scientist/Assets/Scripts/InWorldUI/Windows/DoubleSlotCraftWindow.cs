@@ -41,16 +41,15 @@ namespace WindowNamespace
 
         private IEnumerator Crafting(float time, InSlotPutable result)
         {
+            OnWork.Invoke(true);
             float timer = 0;
-
-            _animator?.SetIsWorking(true);
 
             while(timer < time)
             {
                 timer += Time.deltaTime;
                 _lineTimer.SetLine(timer/time);
 
-                if (CheckMaterials() == false)
+                if (_canWork == false || CheckMaterials() == false)
                 {
                     FinishCrafting();
                     yield break;
@@ -76,8 +75,11 @@ namespace WindowNamespace
 
         private void FinishCrafting()
         {
+            OnWork?.Invoke(false);
             _lineTimer.SetLine(0);
-            _animator?.SetIsWorking(false);
+
+            if (_canWork == false)
+                Hide();
         }
 
         [System.Serializable]

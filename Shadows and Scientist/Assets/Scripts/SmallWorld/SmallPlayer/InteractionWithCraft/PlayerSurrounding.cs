@@ -9,9 +9,9 @@ namespace SmallPlayerNamespace
     {
         [SerializeField] private GameObject _tipUI;
 
-        private List<CraftingBlock> _blocks = new List<CraftingBlock>();
+        private List<IInteractable> _blocks = new List<IInteractable>();
 
-        public void RegisterCraftBlock(CraftingBlock block)
+        public void RegisterCraftBlock(IInteractable block)
         {
             if (_blocks.Contains(block)) return;
 
@@ -27,7 +27,7 @@ namespace SmallPlayerNamespace
                 _tipUI.SetActive(true);
         }
 
-        public void UnregisterCraftBlock(CraftingBlock block)
+        public void UnregisterCraftBlock(IInteractable block)
         {
             if (_blocks.Contains(block) == false) return;
 
@@ -39,12 +39,12 @@ namespace SmallPlayerNamespace
         {
             if(_blocks.Count == 0) return;
 
-            float distance = (_blocks.First().transform.position - transform.position).magnitude;
-            CraftingBlock closestblock = _blocks.First();
+            float distance = (_blocks.First().GetPosition() - transform.position).magnitude;
+            IInteractable closestblock = _blocks.First();
 
             foreach (var b in _blocks)
             {
-                float currentDist = (b.transform.position - transform.position).magnitude;
+                float currentDist = (b.GetPosition() - transform.position).magnitude;
 
                 if (distance > currentDist)
                 {

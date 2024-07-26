@@ -1,4 +1,5 @@
 using MaterialNamespace;
+using System;
 using UnityEngine;
 
 namespace InWorldUINamespace 
@@ -12,6 +13,9 @@ namespace InWorldUINamespace
 
         private bool _isPlaced = false;
 
+        public Action OnPickUpAction;
+        public Action OnLayDownAction;
+
         protected override RaycastSortingLayer GetSortingLayer()
         {
             if( _isPlaced ) return _placedSortingLayer;
@@ -22,6 +26,7 @@ namespace InWorldUINamespace
         protected override void OnLayDown()
         {
             base.OnLayDown();
+            OnLayDownAction?.Invoke();
 
             //It works
             if(transform.parent == null)
@@ -31,7 +36,7 @@ namespace InWorldUINamespace
         protected override void OnPickUp()
         {
             base.OnPickUp();
-
+            OnPickUpAction?.Invoke();
             SetIsUI(true);
         }
 

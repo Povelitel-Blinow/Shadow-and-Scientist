@@ -10,8 +10,6 @@ namespace PlayerNamespace
 
             if (clickable == null) return;
 
-            Debug.Log(2);
-
             clickable.Click();
         }
     }
