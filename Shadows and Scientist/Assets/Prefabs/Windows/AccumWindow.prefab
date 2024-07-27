@@ -172,8 +172,8 @@ MonoBehaviour:
   _outputSlot: {fileID: 6030427832858743292}
   _lineTimer: {fileID: 7631286264351045992}
   _recipes:
-  - Material1: 4
-    Material2: 0
+  - Material1: 0
+    Material2: 4
     Result: {fileID: 6970160442480081649, guid: 080c30aa53322cc43b9ef68f3f84bbc6, type: 3}
     CraftTime: 5
 --- !u!114 &2775937496695553669

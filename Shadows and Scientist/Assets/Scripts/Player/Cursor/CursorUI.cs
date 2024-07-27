@@ -1,3 +1,4 @@
+using InWorldUINamespace;
 using PlayerNamespace;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ namespace CursorNamespace
         [SerializeField] private Sprite _canInteract;
 
         [SerializeField] private SpriteRenderer _cursor;
+
+        [SerializeField] private TipText _tipText;
 
         public static CursorUI Instance { get; private set; }
 
@@ -36,6 +39,16 @@ namespace CursorNamespace
                     _cursor.sprite = _noInteraction;
                     break;
             }
+        }
+
+        public void TipObject(TipableObjectNames name)
+        {
+            _tipText.SetTip(name);
+        }
+
+        public void StopTipping()
+        {
+            _tipText.Hide();
         }
 
         private void Update()

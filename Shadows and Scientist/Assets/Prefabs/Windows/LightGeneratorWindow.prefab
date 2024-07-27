@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settings: {fileID: 11400000, guid: 4a7a3cf32d7eeb74091f01c99e4f7326, type: 2}
-  _redButtonsettings: {fileID: 11400000, guid: c4ba261933e4f544aafb7cb5517f1105, type: 2}
+  _selectButtonsettings: {fileID: 11400000, guid: 06fb5fd89c28f234e8dcf3ac6e7e7b60, type: 2}
   _moveable: {fileID: 5807499470776647368}
   _openPos: {fileID: 329277393467164684}
   _openTime: 1

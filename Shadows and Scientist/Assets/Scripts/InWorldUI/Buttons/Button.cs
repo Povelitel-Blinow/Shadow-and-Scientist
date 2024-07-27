@@ -6,6 +6,7 @@ namespace InWorldUINamespace
 {
     public abstract class Button : MonoBehaviour, IClickable
     {
+        [Header("Select Button")]
         [SerializeField] private ButtonSettings _settings;
 
         private float _clickScaleRatio => _settings.ClickScaleRatio;

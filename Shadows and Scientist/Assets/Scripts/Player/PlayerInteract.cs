@@ -9,12 +9,14 @@ namespace PlayerNamespace
         private PlayerMoveObject _move;
         private PlayerSelectObject _select;
         private PlayerClick _click;
+        private PlayerTip _tip;
 
         public void Init()
         {
             _move = new PlayerMoveObject();
             _select = new PlayerSelectObject();
             _click = new PlayerClick();
+            _tip = new PlayerTip();
         }
 
         public void UpdateInteract()
@@ -23,6 +25,7 @@ namespace PlayerNamespace
 
             _select.Update();
             _move.Update();
+            _tip.TryTip();
 
             SetCursor();
         }

@@ -5,11 +5,8 @@ using GameDesign;
 
 namespace WindowNamespace
 {
-    public class LightGeneratorButton : Button, ISelectable
+    public class LightGeneratorButton : SelectableButton
     {
-        [Header("Select Settings")]
-        [SerializeField] private RedButtonSettings _redButtonsettings;
-
         [Header("ShowUp Settings")]
         [SerializeField] private Transform _moveable;
         [SerializeField] private Transform _openPos;
@@ -38,20 +35,9 @@ namespace WindowNamespace
             _moveable.DOMove(_openPos.position, _openTime);
         }
 
-        public void Select()
-        {
-            transform.DOScale(_redButtonsettings.SelectScaleRatio, _redButtonsettings.SelectScaleTime);
-        }
-
-        public void Deselect()
-        {
-            transform.DOScale(1, _redButtonsettings.SelectScaleTime);
-        }
-
         private void OnDestroy()
         {
             _moveable.DOKill();
-            transform.DOKill();
         }
     }
 }
