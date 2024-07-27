@@ -858,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LightOn
+      name: LightOn1
       rect:
         serializedVersion: 2
         x: 576
@@ -1445,6 +1445,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: LightOn2
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 928
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a629e36e098556a499634de52457f8d3
+      internalID: 1706048373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 962
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e846d3f4ded7ce645ac47a3d08def8b7
+      internalID: 528131186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1477,9 +1519,11 @@ TextureImporter:
       Glass: 1379734056
       Gold: 1215221471
       InteractButton: -1533401188
+      Light: 528131186
       LightGeneratorUI: -23756317
       LightOff: -1294806715
-      LightOn: -818065084
+      LightOn1: -818065084
+      LightOn2: 1706048373
       LineTimer: -566947423
       Materializer: -1461645241
       Metall: 702632576

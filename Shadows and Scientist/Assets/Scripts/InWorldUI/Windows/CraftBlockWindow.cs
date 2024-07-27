@@ -13,7 +13,10 @@ namespace WindowNamespace
         public void Init()
         {
             gameObject.SetActive(false);
+            OnInit();
         }
+
+        protected virtual void OnInit() { }
 
         public void ShowUp()
         {

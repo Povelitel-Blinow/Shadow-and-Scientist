@@ -7,7 +7,7 @@ namespace InWorldUINamespace
     {
         [SerializeField] private EnergySeeker _energySeeker;
 
-        public override void OnClick()
+        protected override void OnClick()
         {
             _energySeeker.Spawn();
         }

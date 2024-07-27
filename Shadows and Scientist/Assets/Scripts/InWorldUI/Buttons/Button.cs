@@ -20,7 +20,7 @@ namespace InWorldUINamespace
             transform.DOScale(_clickScaleRatio, _clickTime).SetLoops(2, LoopType.Yoyo);
         }
 
-        public virtual void OnClick() { }
+        protected virtual void OnClick() { }
 
         private void OnDestroy()
         {

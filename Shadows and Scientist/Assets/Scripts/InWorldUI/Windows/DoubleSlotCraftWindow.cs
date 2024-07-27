@@ -25,7 +25,7 @@ namespace WindowNamespace
             _inputSlot2.OnPut += TryMake;
         }
 
-        private void Start()
+        protected override void OnInit()
         {
             _inputSlot1.OnPut += TryMake;
             _inputSlot2.OnPut += TryMake;

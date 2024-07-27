@@ -10,7 +10,7 @@ namespace GadgetNamespace
         [SerializeField] private Transform[] _positions;
         [SerializeField] private float _moveTime;
 
-        private int _currentPos;
+        [SerializeField] private int _currentPos;
 
         public void Click()
         {

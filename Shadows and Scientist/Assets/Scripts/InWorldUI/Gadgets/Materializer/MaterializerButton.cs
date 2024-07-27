@@ -7,7 +7,7 @@ namespace GadgetNamespace
     {
         [SerializeField] private Materializer _materializer;
 
-        public override void OnClick()
+        protected override void OnClick()
         {
             _materializer.TryMaterialize();    
         }
