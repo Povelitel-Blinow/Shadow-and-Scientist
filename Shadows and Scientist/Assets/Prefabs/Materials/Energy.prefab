@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6151556901803351999}
   - component: {fileID: 864075707960497774}
   - component: {fileID: 6970160442480081649}
+  - component: {fileID: -8502030962570859362}
   m_Layer: 8
   m_Name: Energy
   m_TagString: Untagged
@@ -110,6 +111,19 @@ MonoBehaviour:
   _slotLayer:
     serializedVersion: 2
     m_Bits: 2048
+--- !u!114 &-8502030962570859362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2226151403320294006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e33882e5643184188e95dad56040c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: 0
 --- !u!1 &6060626215324345189
 GameObject:
   m_ObjectHideFlags: 0

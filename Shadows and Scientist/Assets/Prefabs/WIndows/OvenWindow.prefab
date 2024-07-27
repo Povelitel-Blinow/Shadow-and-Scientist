@@ -631,6 +631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tip
       objectReference: {fileID: 0}
+    - target: {fileID: 7953385509242841104, guid: cb482d818b3dae847a741811e3d10172, type: 3}
+      propertyPath: _windowPrefab
+      value: 
+      objectReference: {fileID: 7774409762873944526, guid: f1c36d0aafab8954598ed6f6a7d2a27f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

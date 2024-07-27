@@ -20,11 +20,13 @@ namespace WindowNamespace
         private void OnEnable()
         {
             _inputSlot.OnPut += TryMake;
+            _outputSlot.OnPutOut += TryMake;
         }
 
         private void  Start()
         {
             _inputSlot.OnPut += TryMake;
+            _outputSlot.OnPutOut += TryMake;
         }
 
         public void TryMake()
@@ -63,6 +65,7 @@ namespace WindowNamespace
         private void OnDisable()
         {
             _inputSlot.OnPut -= TryMake;
+            _outputSlot.OnPutOut -= TryMake;
         }
     }
 }

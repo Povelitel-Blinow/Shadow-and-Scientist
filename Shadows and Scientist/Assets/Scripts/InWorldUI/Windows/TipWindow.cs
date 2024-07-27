@@ -6,6 +6,7 @@ namespace WindowNamespace
     {
         public void ShowUp()
         {
+
             gameObject.SetActive(true);
         }
 

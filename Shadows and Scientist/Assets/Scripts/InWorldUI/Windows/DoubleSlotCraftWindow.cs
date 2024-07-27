@@ -23,16 +23,21 @@ namespace WindowNamespace
         {
             _inputSlot1.OnPut += TryMake;
             _inputSlot2.OnPut += TryMake;
+            _outputSlot.OnPutOut += TryMake;
         }
 
         protected override void OnInit()
         {
             _inputSlot1.OnPut += TryMake;
             _inputSlot2.OnPut += TryMake;
+            _outputSlot.OnPutOut += TryMake;
         }
 
         public void TryMake()
         {
+
+            if (_outputSlot.InSlot != null) return;
+            
             if (_inputSlot1.Material == null) return;
             if (_inputSlot2.Material == null) return;
 
@@ -94,6 +99,7 @@ namespace WindowNamespace
         {
             _inputSlot1.OnPut -= TryMake;
             _inputSlot2.OnPut -= TryMake;
+            _outputSlot.OnPutOut -= TryMake;
         }
 
 
