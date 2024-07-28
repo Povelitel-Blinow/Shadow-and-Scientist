@@ -14,7 +14,23 @@ namespace InWorldUINamespace
 
     public enum RaycastSortingLayer
     {
-        Wall = -1,
+        Wall = -20,
+        Materializer = -19,
+        EnergySeeker = -18,
+        DefaultCraftWindow = -17,
+        BackPack = -16,
+        Window1 = -15,
+        Window2 = -14,
+        Window3 = -13,
+        Window4 = -12,
+        Window5 = -11,
+        Window6 = -10,
+
+        Tip1 = -9,
+        Tip2 = -8,
+        Tip3 = -7,
+        Tip4 = -6,
+
         Object = 0,
         SlidingButton = 1,
         Window = 2,

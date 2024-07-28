@@ -53,17 +53,47 @@ TagManager:
   - name: SmallPlayerUI
     uniqueID: 3789797071
     locked: 0
+  - name: Materializer
+    uniqueID: 724887989
+    locked: 0
   - name: EnergySeeker
     uniqueID: 903996639
     locked: 0
-  - name: Materializer
-    uniqueID: 724887989
+  - name: DefaultCraftWindow
+    uniqueID: 3476727165
     locked: 0
   - name: BackPack
     uniqueID: 2588774579
     locked: 0
-  - name: Window
+  - name: Window1
+    uniqueID: 2113723323
+    locked: 0
+  - name: Window2
+    uniqueID: 3768343669
+    locked: 0
+  - name: Window3
+    uniqueID: 2170687549
+    locked: 0
+  - name: Window4
+    uniqueID: 2588482761
+    locked: 0
+  - name: Window5
+    uniqueID: 1877383977
+    locked: 0
+  - name: Window6
     uniqueID: 4106169793
+    locked: 0
+  - name: Tip1
+    uniqueID: 434144309
+    locked: 0
+  - name: Tip2
+    uniqueID: 3050193963
+    locked: 0
+  - name: Tip3
+    uniqueID: 805269539
+    locked: 0
+  - name: Tip4
+    uniqueID: 2557048823
     locked: 0
   - name: Material
     uniqueID: 1637546659

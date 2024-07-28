@@ -7,7 +7,6 @@ namespace WindowNamespace
         [SerializeField] private TipWindow _windowPrefab;
 
         private TipWindow _window;
-        private bool _isActive = false;
 
         private void Start()
         {
@@ -23,11 +22,7 @@ namespace WindowNamespace
 
         protected override void OnClick()
         {
-            _isActive = !_isActive;
-            if(_isActive)
-                _window.ShowUp();
-            else
-                _window.Hide();
+            _window.ChangeState();
         }
     }
 }
