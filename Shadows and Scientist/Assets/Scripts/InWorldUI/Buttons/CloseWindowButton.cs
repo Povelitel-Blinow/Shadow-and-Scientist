@@ -7,7 +7,7 @@ namespace InWorldUINamespace
     {
         [SerializeField] private CraftBlockWindow _window;
 
-        public override void OnClick()
+        protected override void OnClick()
         {
             _window.Hide();
         }

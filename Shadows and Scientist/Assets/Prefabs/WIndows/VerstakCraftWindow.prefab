@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca759acf8fcbe64087a1dd60b979e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tipButton: {fileID: 6964268788323985667}
   _inputSlot1: {fileID: 2896952672877359878}
   _inputSlot2: {fileID: 4024050413092376861}
   _outputSlot: {fileID: 5069204698894060631}
@@ -346,6 +347,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 897324410020027488, guid: cb482d818b3dae847a741811e3d10172, type: 3}
   m_PrefabInstance: {fileID: 1064560815074214163}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6964268788323985667 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7953385509242841104, guid: cb482d818b3dae847a741811e3d10172, type: 3}
+  m_PrefabInstance: {fileID: 1064560815074214163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8a33cc81fd4f2489e5cec856640e48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2839146896707094829
 PrefabInstance:
   m_ObjectHideFlags: 0

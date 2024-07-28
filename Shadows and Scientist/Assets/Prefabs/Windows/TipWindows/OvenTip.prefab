@@ -1252,6 +1252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7187534862560903087, guid: b9f1e767e3f196243b6908a4bde3dcf7, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1270,6 +1274,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: 733252645127088322, guid: 1953240643fc44841adca1f0141f37f3, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 2209837760504682733, guid: 1953240643fc44841adca1f0141f37f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.31658363
@@ -1332,6 +1340,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: -4340971030166544512, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 7499690777215031650, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
       propertyPath: m_Name
       value: T4
@@ -1438,6 +1450,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7246570805836843523, guid: bd9bf927ffa0b494e97f14d32fb7361c, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1456,6 +1472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: -1530647982023177063, guid: 60a3b1c04a81bf8448e5bf1fa22317b9, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 5892031217378507415, guid: 60a3b1c04a81bf8448e5bf1fa22317b9, type: 3}
       propertyPath: m_Name
       value: T2
@@ -1518,6 +1538,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: 733252645127088322, guid: 1953240643fc44841adca1f0141f37f3, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 2209837760504682733, guid: 1953240643fc44841adca1f0141f37f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.32305145

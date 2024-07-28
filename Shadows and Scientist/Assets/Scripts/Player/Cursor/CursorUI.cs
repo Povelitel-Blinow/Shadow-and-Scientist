@@ -15,6 +15,7 @@ namespace CursorNamespace
 
         public static CursorUI Instance { get; private set; }
 
+
         public void Init()
         {
             if (Instance == null)

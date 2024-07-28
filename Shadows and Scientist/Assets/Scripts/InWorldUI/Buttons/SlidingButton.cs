@@ -18,7 +18,7 @@ namespace InWorldUINamespace
             OnClick();
         }
 
-        public virtual void OnClick() { }
+        protected virtual void OnClick() { }
 
         public void Deselect()
         {

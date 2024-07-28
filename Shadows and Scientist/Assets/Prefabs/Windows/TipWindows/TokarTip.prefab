@@ -1517,6 +1517,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: -4777751126373954635, guid: d4907c684ef2534449740d562461460c, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 2559855680216441599, guid: d4907c684ef2534449740d562461460c, type: 3}
       propertyPath: m_Name
       value: T7
@@ -1583,6 +1587,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: 3742725561152322357, guid: 105ee92a59e8246458470ee84ec931ce, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 6450764539788379611, guid: 105ee92a59e8246458470ee84ec931ce, type: 3}
       propertyPath: m_Name
       value: T13
@@ -1645,6 +1653,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: -4340971030166544512, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 7499690777215031650, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
       propertyPath: m_Name
       value: T4
@@ -1751,6 +1763,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7246570805836843523, guid: bd9bf927ffa0b494e97f14d32fb7361c, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1769,6 +1785,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: -4340971030166544512, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 7499690777215031650, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
       propertyPath: m_Name
       value: T4 (1)
@@ -1835,6 +1855,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: -2777341622264168576, guid: 02be749d2ad7b0d4d962fd5e8cfe9666, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 731165217212805473, guid: 02be749d2ad7b0d4d962fd5e8cfe9666, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6080009
@@ -1901,6 +1925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5176872845765572110}
     m_Modifications:
+    - target: {fileID: -4340971030166544512, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 7499690777215031650, guid: 6042a29fe66683448a3ac85b358afe0b, type: 3}
       propertyPath: m_Name
       value: T4
@@ -2007,6 +2035,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7246570805836843523, guid: bd9bf927ffa0b494e97f14d32fb7361c, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2029,6 +2061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: T14
       objectReference: {fileID: 0}
+    - target: {fileID: 2792794420366205720, guid: d8da75d620dd84b48bbe5d96b1c59f89, type: 3}
+      propertyPath: _subject
+      value: 
+      objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 4845006657271380939, guid: d8da75d620dd84b48bbe5d96b1c59f89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.67991996

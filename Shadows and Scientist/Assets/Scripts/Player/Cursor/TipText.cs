@@ -1,4 +1,6 @@
+using DG.Tweening;
 using InWorldUINamespace;
+using System.Collections;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -19,8 +21,8 @@ namespace CursorNamespace
 
         public void Hide()
         {
-            _text.text = "";
             gameObject.SetActive(false);
+            _text.text = "";
         }
     }
 }

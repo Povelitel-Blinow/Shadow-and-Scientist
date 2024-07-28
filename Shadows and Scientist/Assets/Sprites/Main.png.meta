@@ -1853,7 +1853,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1861,6 +1861,69 @@ TextureImporter:
       bones: []
       spriteID: a7f0f24289f893249ac261478fa2bbbd
       internalID: -1316907529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShowMaterButton
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 902
+        width: 23
+        height: 10
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df02e6d4f67d2484084b1bdf4ba7fdc2
+      internalID: -432058222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHowCraftButton
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 891
+        width: 23
+        height: 10
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477bbf455836c3444afcc5e1053d626a
+      internalID: 1085187301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShowEnergyButton
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 880
+        width: 23
+        height: 10
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80af3328f330cae43aeee9c635d5c1a5
+      internalID: -325783045
       vertices: []
       indices: 
       edges: []
@@ -1925,10 +1988,13 @@ TextureImporter:
       S2: -155072484
       S3: -482232189
       S4: 1220714708
+      SHowCraftButton: 1085187301
       SR1: -2026167242
       SR2: -981087861
       SR3: 1817677660
       SR4: 602222791
+      ShowEnergyButton: -325783045
+      ShowMaterButton: -432058222
       Slider1: 1494578474
       Slider2: -1760836212
       SteelPlate: 1043183170

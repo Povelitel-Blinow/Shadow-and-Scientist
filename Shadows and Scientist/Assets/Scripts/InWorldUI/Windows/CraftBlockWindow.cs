@@ -1,4 +1,3 @@
-using CraftNamespace;
 using System;
 using UnityEngine;
 
@@ -6,6 +5,9 @@ namespace WindowNamespace
 {
     public abstract class CraftBlockWindow : MonoBehaviour
     {
+        [Header("Tip")]
+        [SerializeField] private TipButton _tipButton;
+
         public Action<bool> OnWork;
         public Action<float> OnLineTimerChange;
         protected bool _canWork = true;
