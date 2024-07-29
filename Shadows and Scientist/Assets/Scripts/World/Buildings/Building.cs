@@ -19,6 +19,13 @@ namespace WorldNamespace
 
         public Transform GetBuildingTransform() => _buildingCenter;
 
+        public void Pay(int mins)
+        {
+            _mins += mins;
+            _timer = 0;
+            Tick();
+        }
+
         public void GetInBuilding()
         {
             if(_mins == 0 &&  _secs == 0)

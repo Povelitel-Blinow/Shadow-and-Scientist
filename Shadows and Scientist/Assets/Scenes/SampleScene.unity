@@ -4927,6 +4927,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7353528836755406680, guid: 0979a440c97dbdd4f9afb7a1c3895457, type: 3}
+      propertyPath: _inputSlot
+      value: 
+      objectReference: {fileID: 3873846598641876380}
+    - target: {fileID: 7353528836755406680, guid: 0979a440c97dbdd4f9afb7a1c3895457, type: 3}
       propertyPath: _timers.Array.data[1]
       value: 
       objectReference: {fileID: 1513239606}
@@ -4935,6 +4939,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0979a440c97dbdd4f9afb7a1c3895457, type: 3}
+--- !u!114 &3873846598641876380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5836649438097111226, guid: 0979a440c97dbdd4f9afb7a1c3895457, type: 3}
+  m_PrefabInstance: {fileID: 502690925602168905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b1e04cf0066d848b110f62bf50da37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5598904611904499826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464066645971819656, guid: 0979a440c97dbdd4f9afb7a1c3895457, type: 3}

@@ -6,6 +6,7 @@ using WorldNamespace;
 
 namespace MaterialNamespace
 {
+    [RequireComponent(typeof(BoxCollider2D))]
     public class InSlotPutable : Moveable, IInSlopPutable
     {
         [Header("InSlotPutable params")]
@@ -88,8 +89,11 @@ namespace MaterialNamespace
         //DRY? Nah, never heard of it
         public void Void()
         {
+            //Yeah, I know that there is a 0.3s gap
+            //in which player can take it out
+
             transform.DOComplete();
-            transform.DOScale(0, 0.5f).OnComplete(() =>
+            transform.DOScale(0, 0.3f).OnComplete(() =>
             {
                 WorkPlace.Instance.DeregisterInSLotPutable(this);
                 gameObject.SetActive(false);

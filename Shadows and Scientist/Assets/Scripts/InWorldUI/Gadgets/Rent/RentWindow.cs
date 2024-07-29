@@ -1,6 +1,8 @@
 using RentNamespace;
 using UnityEngine;
 using WorldNamespace;
+using SlotNamespace;
+using MaterialNamespace;
 
 namespace GadgetNamespace
 {
@@ -8,7 +10,30 @@ namespace GadgetNamespace
     {
         [SerializeField] private RentTimeUI[] _timers;
 
+        [SerializeField] private CraftSlot _inputSlot;
+
         private Building _building;
+
+        private void Start()
+        {
+            _inputSlot.OnPut += TryPayRent;
+        }
+
+        private void TryPayRent()
+        {
+            if (_building == null) return;
+
+            if (_inputSlot.Material.MaterialType == MaterialType.Gold)
+            {
+                _building.Pay(1);
+            }
+            else if (_inputSlot.Material.MaterialType == MaterialType.Coin)
+            {
+                _building.Pay(2);
+            }
+
+            _inputSlot.VoidSlot();
+        }
 
         public void SetNewBuilding(Building building)
         {

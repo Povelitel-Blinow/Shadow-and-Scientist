@@ -101,6 +101,12 @@ TagManager:
   - name: Tip4
     uniqueID: 2557048823
     locked: 0
+  - name: Window7
+    uniqueID: 3073213337
+    locked: 0
+  - name: Tip5
+    uniqueID: 1105572709
+    locked: 0
   - name: Material
     uniqueID: 1637546659
     locked: 0

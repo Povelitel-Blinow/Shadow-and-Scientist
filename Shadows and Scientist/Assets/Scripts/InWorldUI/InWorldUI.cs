@@ -30,6 +30,9 @@ namespace InWorldUINamespace
         Tip2 = -8,
         Tip3 = -7,
         Tip4 = -6,
+        Window7 = -5,
+
+        Tip5 = -4,
 
         Object = 0,
         SlidingButton = 1,
