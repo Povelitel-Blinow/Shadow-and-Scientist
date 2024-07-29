@@ -11,7 +11,7 @@ namespace PlayerNamespace
         {
             if(CurrentMoving == null) return;
 
-            CurrentMoving.Move(PlayerInput.Instance.GetMousePos());
+            CurrentMoving.Move(PlayerInput.Instance.GetMouseLocalPos());
         }
 
         public void TryMove()
@@ -29,7 +29,7 @@ namespace PlayerNamespace
             NullMoveable();
 
             CurrentMoving = moveable;
-            moveable.PickUp(PlayerInput.Instance.GetMousePos());
+            moveable.PickUp(PlayerInput.Instance.GetMouseLocalPos());
         }
 
         private void NullMoveable()

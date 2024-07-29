@@ -18,7 +18,7 @@ namespace SlotNamespace
         {
             if (_slotPutable == null) return;
 
-            Destroy(_slotPutable.gameObject);
+            _slotPutable.Void();
             _slotPutable = null;
         }
     }

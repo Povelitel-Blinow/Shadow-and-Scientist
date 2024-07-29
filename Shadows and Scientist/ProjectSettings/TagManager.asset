@@ -18,7 +18,7 @@ TagManager:
   - 
   - Slot
   - Energy
-  - 
+  - Surroundings
   - 
   - 
   - 
@@ -53,6 +53,9 @@ TagManager:
   - name: SmallPlayerUI
     uniqueID: 3789797071
     locked: 0
+  - name: Roof
+    uniqueID: 1675749295
+    locked: 0
   - name: Materializer
     uniqueID: 724887989
     locked: 0
@@ -82,6 +85,9 @@ TagManager:
     locked: 0
   - name: Window6
     uniqueID: 4106169793
+    locked: 0
+  - name: Voider
+    uniqueID: 3209654725
     locked: 0
   - name: Tip1
     uniqueID: 434144309

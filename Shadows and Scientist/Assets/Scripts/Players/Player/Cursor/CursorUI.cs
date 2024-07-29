@@ -55,7 +55,7 @@ namespace CursorNamespace
         private void Update()
         {
             Cursor.visible = false;
-            transform.position = PlayerInput.Instance.GetMousePos();
+            transform.position = PlayerInput.Instance.GetMouseGlobalPos();
         } 
     }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using WorldNamespace;
 
 namespace InWorldUINamespace
 {
@@ -11,8 +12,8 @@ namespace InWorldUINamespace
 
         public void PickUp(Vector3 position)
         {
-            _startOffset = position - transform.position;
-
+            transform.parent = WorkPlace.Instance.transform;
+            _startOffset = position - transform.localPosition;
             OnPickUp();
         }
 
@@ -30,7 +31,7 @@ namespace InWorldUINamespace
                 Map.Instance.VerticalBorders.x,
                 Map.Instance.VerticalBorders.y);
 
-            transform.position = new Vector3(newX, newY, 0) + GetSortingOffset();
+            transform.localPosition = new Vector3(newX, newY, 0) + GetSortingOffset();
 
             OnMove();
         }

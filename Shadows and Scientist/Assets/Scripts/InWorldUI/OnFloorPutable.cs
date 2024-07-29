@@ -1,6 +1,7 @@
 using MaterialNamespace;
 using System;
 using UnityEngine;
+using WorldNamespace;
 
 namespace InWorldUINamespace 
 {
@@ -29,8 +30,11 @@ namespace InWorldUINamespace
             OnLayDownAction?.Invoke();
 
             //It works
-            if(transform.parent == null)
+            if (transform.parent == WorkPlace.Instance.transform)
+            {
+                transform.parent = null;
                 SetIsUI(false);
+            }
         }
 
         protected override void OnPickUp()

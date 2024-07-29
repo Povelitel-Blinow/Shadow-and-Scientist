@@ -21,7 +21,8 @@ namespace PlayerNamespace
         public bool GetMouseUp() => Input.GetMouseButtonUp(0);
 
         public Ray GetScreenPointRay() => _camera.ScreenPointToRay(Input.mousePosition);
-        public Vector2 GetMousePos() => _camera.ScreenToWorldPoint(Input.mousePosition);
+        public Vector2 GetMouseLocalPos() => _camera.ScreenToWorldPoint(Input.mousePosition) - _camera.transform.position;
+        public Vector2 GetMouseGlobalPos() => _camera.ScreenToWorldPoint(Input.mousePosition);
 
         private void OnValidate()
         {

@@ -1928,6 +1928,237 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Exit1
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 681
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80198ab7a5bc19b47b51076c9b611453
+      internalID: 1568628256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exit2
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 672
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219dc51644f3fce47a149cd6db51ab53
+      internalID: -1253930624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidWindow
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 808
+        width: 22
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10304584c8fb03742a125bb631c9daaf
+      internalID: -1614975504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidButton
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 823
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bee5523094afac4f843d1f667466a0e
+      internalID: -807664295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoiderIcon
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 852
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42fa3f4cf49a8c498fd7aca104221d9
+      internalID: -321831154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entry1
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 681
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc2de31e8c33f24faedbfa70ce26ff4
+      internalID: -1089826134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entry2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 672
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107a1ca1ec96fe64ab6b6a71292bb01d
+      internalID: -639191893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door1
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 681
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf0457383e66574e8d3298acfd0ca27
+      internalID: 2118485307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door2
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 672
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48544f024cca81b4ea504d005914b3a4
+      internalID: -248184813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window1
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 681
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9978ad7c72f16474e90b6dd7c152ed78
+      internalID: 69664776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window2
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 672
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3303e0f2452b947b69ba09b59ed8ef
+      internalID: 44549441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1954,9 +2185,15 @@ TextureImporter:
       ColbFull: -57010126
       Cursor1: -929619477
       Cursor2: -1934263056
+      Door1: 2118485307
+      Door2: -248184813
       EmptySlot: 1622655411
       Energy: 1583345819
       EnergySeeker: 659540281
+      Entry1: -1089826134
+      Entry2: -639191893
+      Exit1: 1568628256
+      Exit2: -1253930624
       Glass: 1379734056
       Gold: 1215221471
       InteractButton: -1533401188
@@ -2024,6 +2261,11 @@ TextureImporter:
       Verstak: -866687814
       VerstakUI: 1716299509
       VerstakWindow: 1520341662
+      VoidButton: -807664295
+      VoidWindow: -1614975504
+      VoiderIcon: -321831154
+      Window1: 69664776
+      Window2: 44549441
       WindowSlideButton: -1462225889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

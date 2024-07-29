@@ -2,6 +2,7 @@ using DG.Tweening;
 using InWorldUINamespace;
 using SlotNamespace;
 using UnityEngine;
+using WorldNamespace;
 
 namespace MaterialNamespace
 {
@@ -13,6 +14,11 @@ namespace MaterialNamespace
         private float _raycastDistance = 100;
 
         private Slot _slot;
+
+        private void Start()
+        {
+            
+        }
 
         protected override void OnLayDown()
         {
@@ -53,13 +59,16 @@ namespace MaterialNamespace
 
         protected override void OnPickUp()
         {
-            transform.parent = null;
-
             if(_slot == null) return;
 
             _slot.PutOut();
 
             _slot = null;
+        }
+
+        public void Void()
+        {
+            Destroy(gameObject);
         }
 
         private void OnDestroy()

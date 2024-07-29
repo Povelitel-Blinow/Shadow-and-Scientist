@@ -35,7 +35,7 @@ namespace InWorldUINamespace
         SlidingButton = 1,
         Window = 2,
         Button = 3,
-        Material = 4
+        Material = 4,
     }
 }
 
