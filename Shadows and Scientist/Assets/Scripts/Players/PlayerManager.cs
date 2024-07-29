@@ -9,8 +9,11 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private SmallPlayer _smallPlayer;
     [SerializeField] private EnergySeeker _energySeeker;
+    [SerializeField] private RentWindow _rentWindow;
     [SerializeField] private CameraBehaviour _cameraBehaviour;
     [SerializeField] private WorkPlace _workPlace;
+
+    private Building _lastVisitedBuilding;
 
     public static PlayerManager Instance { get; private set; }
 
@@ -31,6 +34,10 @@ public class PlayerManager : MonoBehaviour
 
     public void GetInBuilding(Building building)
     {
+        _lastVisitedBuilding = building;
+        _rentWindow.SetNewBuilding(building);
+        building.GetInBuilding();
+
         _cameraBehaviour.MoveTo(building.GetBuildingTransform());
         _workPlace.Attach(building.GetBuildingTransform());
         _workPlace.OnBuildingEnter();

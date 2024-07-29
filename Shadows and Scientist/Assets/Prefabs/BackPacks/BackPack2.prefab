@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8224881963514558613}
   - component: {fileID: 48583236584925044}
   - component: {fileID: 7595846467110115958}
+  - component: {fileID: -6012801470206030784}
   m_Layer: 8
   m_Name: BackPack2
   m_TagString: Untagged
@@ -140,6 +141,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2535374, y: 1.2509296}
   m_EdgeRadius: 0
+--- !u!114 &-6012801470206030784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850549350561863953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b29696ae7b4e5f4ab965e10fd407e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7789094709301126126
 GameObject:
   m_ObjectHideFlags: 0
