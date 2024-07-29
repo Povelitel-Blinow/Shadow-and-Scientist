@@ -7,6 +7,7 @@ namespace CraftNamespace
     public class CraftingBlockTrigger : MonoBehaviour, IInteractable
     {
         public Action OnInteract;
+        public Action OnDeinteract;
 
         public Vector3 GetPosition()
         {
@@ -16,6 +17,11 @@ namespace CraftNamespace
         public void Interact()
         {
             OnInteract?.Invoke();
+        }
+
+        public void Deinteract()
+        {
+            OnDeinteract?.Invoke();
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a3f47926333f94b89ae25675dee36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _staticParent: 1
   _sortingLayer: -12
 --- !u!114 &3100212900434677836
 MonoBehaviour:
@@ -385,7 +386,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1706484535
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_Sprite: {fileID: 1716299509, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -558,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 3100212900434677836}
     - target: {fileID: 3365591813465162741, guid: 6e556cc53731e0f4b8f6a792055ddf4b, type: 3}
       propertyPath: m_SortingLayer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3365591813465162741, guid: 6e556cc53731e0f4b8f6a792055ddf4b, type: 3}
       propertyPath: m_SortingLayerID
@@ -668,7 +669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5084105435455906377, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
       propertyPath: m_SortingLayer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5084105435455906377, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
       propertyPath: m_SortingLayerID
@@ -680,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8772271166945829719, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
       propertyPath: m_SortingLayer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8772271166945829719, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
       propertyPath: m_SortingLayerID
@@ -688,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8980992931769639404, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
       propertyPath: m_SortingLayer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8980992931769639404, guid: ce75537870121d74b91c6cd3f533723f, type: 3}
       propertyPath: m_SortingLayerID

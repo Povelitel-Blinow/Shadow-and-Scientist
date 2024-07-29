@@ -30,7 +30,8 @@ namespace InWorldUINamespace
             OnLayDownAction?.Invoke();
 
             //It works
-            if (transform.parent == WorkPlace.Instance.transform)
+            if (transform.parent == WorkPlace.Instance.transform ||
+                transform.parent == null)
             {
                 transform.parent = null;
                 SetIsUI(false);

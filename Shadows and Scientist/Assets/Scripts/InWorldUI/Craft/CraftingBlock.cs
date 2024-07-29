@@ -2,6 +2,7 @@ using SmallPlayerNamespace;
 using WindowNamespace;
 using UnityEngine;
 using InWorldUINamespace;
+using WorldNamespace;
 
 namespace CraftNamespace
 {
@@ -18,6 +19,7 @@ namespace CraftNamespace
         private void Start()
         {
             _trigger.OnInteract += Interact;
+            _trigger.OnDeinteract += Deinteract;
 
             _window = Instantiate(_craftWindowPrefab);
             _window.Init();
@@ -31,6 +33,11 @@ namespace CraftNamespace
         private void Interact()
         {
             _window.ShowUp();
+        }
+
+        private void Deinteract()
+        {
+            _window.Hide();
         }
 
         private void SetIsWorking(bool isWorking)
@@ -73,6 +80,8 @@ namespace CraftNamespace
         private void OnDisable()
         {
             _trigger.OnInteract -= Interact;
+            _trigger.OnDeinteract -= Deinteract;
+
             _window.OnWork -= SetIsWorking;
             _window.OnLineTimerChange -= OnTimerValueChanged;
             _floor.OnPickUpAction -= OnPickUp;

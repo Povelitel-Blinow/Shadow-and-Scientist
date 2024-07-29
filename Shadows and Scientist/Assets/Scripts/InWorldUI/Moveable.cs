@@ -6,6 +6,7 @@ namespace InWorldUINamespace
     public class Moveable : MonoBehaviour, IMoveable
     {
         [Header("Moveable params:")]
+        [SerializeField] private bool _staticParent = false;
         [SerializeField] private RaycastSortingLayer _sortingLayer;
 
         private Vector3 _startOffset;
@@ -49,6 +50,9 @@ namespace InWorldUINamespace
 
         public void LayDown()
         {
+            if(_staticParent == false)
+                transform.parent = WorkPlace.Instance.GetParentTransformForMoveable();
+
             _startOffset = Vector3.zero;
             OnLayDown();
 

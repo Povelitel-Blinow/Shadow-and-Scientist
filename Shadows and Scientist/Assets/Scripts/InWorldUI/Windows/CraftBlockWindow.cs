@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using WorldNamespace;
 
 namespace WindowNamespace
 {
@@ -15,6 +16,10 @@ namespace WindowNamespace
         public void Init()
         {
             gameObject.SetActive(false);
+
+            transform.parent = WorkPlace.Instance.transform;
+            transform.localPosition = Vector3.zero;
+
             OnInit();
         }
 

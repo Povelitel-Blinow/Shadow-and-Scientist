@@ -31,6 +31,7 @@ namespace SmallPlayerNamespace
         {
             if (_blocks.Contains(block) == false) return;
 
+            block.Deinteract();
             _blocks.Remove(block);
             ShowTip();
         }

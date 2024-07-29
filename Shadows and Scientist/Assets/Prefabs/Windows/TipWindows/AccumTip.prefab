@@ -343,7 +343,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1737918473
-  m_SortingLayer: 18
+  m_SortingLayer: 20
   m_SortingOrder: -20
   m_Sprite: {fileID: 1722870182, guid: a030cb63af0f079459f88c46ae51050a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -621,6 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a3f47926333f94b89ae25675dee36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _staticParent: 1
   _sortingLayer: -6
 --- !u!1 &5975186517003255440
 GameObject:
@@ -905,7 +906,7 @@ PrefabInstance:
       objectReference: {fileID: 2464940801652479991}
     - target: {fileID: 1855412728183623449, guid: d4907c684ef2534449740d562461460c, type: 3}
       propertyPath: m_SortingLayer
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1855412728183623449, guid: d4907c684ef2534449740d562461460c, type: 3}
       propertyPath: m_SortingLayerID
@@ -991,7 +992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6794623279867721774, guid: b9f1e767e3f196243b6908a4bde3dcf7, type: 3}
       propertyPath: m_SortingLayer
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6794623279867721774, guid: b9f1e767e3f196243b6908a4bde3dcf7, type: 3}
       propertyPath: m_SortingLayerID
@@ -1133,7 +1134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3719487936384712568, guid: 1953240643fc44841adca1f0141f37f3, type: 3}
       propertyPath: m_SortingLayer
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3719487936384712568, guid: 1953240643fc44841adca1f0141f37f3, type: 3}
       propertyPath: m_SortingLayerID

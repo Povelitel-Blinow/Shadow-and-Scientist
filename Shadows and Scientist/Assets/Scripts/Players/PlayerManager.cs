@@ -32,12 +32,14 @@ public class PlayerManager : MonoBehaviour
     public void GetInBuilding(Building building)
     {
         _cameraBehaviour.MoveTo(building.GetBuildingTransform());
-        _workPlace.Attch(building.GetBuildingTransform());
+        _workPlace.Attach(building.GetBuildingTransform());
+        _workPlace.OnBuildingEnter();
     }
 
     public void GetOutBuilding()
     {
         _cameraBehaviour.MoveTo(_smallPlayer.transform);
-        _workPlace.Attch(_cameraBehaviour.transform);
+        _workPlace.Attach(_cameraBehaviour.transform);
+        _workPlace.OnBuildingLeave();
     }
 }

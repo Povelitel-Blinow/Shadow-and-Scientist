@@ -35,7 +35,6 @@ namespace WindowNamespace
 
         public void TryMake()
         {
-
             if (_outputSlot.InSlot != null) return;
             
             if (_inputSlot1.Material == null) return;

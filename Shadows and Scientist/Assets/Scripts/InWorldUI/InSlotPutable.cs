@@ -17,7 +17,7 @@ namespace MaterialNamespace
 
         private void Start()
         {
-            
+            WorkPlace.Instance.RegisterInSlotPutable(this);
         }
 
         protected override void OnLayDown()
@@ -54,6 +54,8 @@ namespace MaterialNamespace
         public void InitByOutputSlot(Slot outputSlot)
         {
             _slot = outputSlot;
+            transform.localScale = Vector3.zero;
+            Show();
             MoveToSlot(outputSlot);
         }
 
@@ -66,9 +68,33 @@ namespace MaterialNamespace
             _slot = null;
         }
 
+        public void Show()
+        {
+            transform.DOComplete();
+            transform.DOScale(1, 0.5f).OnComplete(() =>
+            {
+                gameObject.SetActive(true);
+            });
+        }
+
+        public void Hide()
+        {
+            transform.DOComplete();
+            transform.DOScale(0, 0.5f).OnComplete(() =>
+            {
+                gameObject.SetActive(false);
+            });
+        }
+        //DRY? Nah, never heard of it
         public void Void()
         {
-            Destroy(gameObject);
+            transform.DOComplete();
+            transform.DOScale(0, 0.5f).OnComplete(() =>
+            {
+                WorkPlace.Instance.DeregisterInSLotPutable(this);
+                gameObject.SetActive(false);
+                Destroy(gameObject);
+            });
         }
 
         private void OnDestroy()

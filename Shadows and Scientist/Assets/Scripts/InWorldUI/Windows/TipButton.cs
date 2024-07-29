@@ -11,7 +11,9 @@ namespace WindowNamespace
         private void Start()
         {
             transform.localPosition += transform.forward * -0.2f;
-            _window = Instantiate(_windowPrefab, Vector3.zero, Quaternion.identity);
+            _window = Instantiate(_windowPrefab);
+            
+            _window.Init();
             _window.Hide();
         }
 
