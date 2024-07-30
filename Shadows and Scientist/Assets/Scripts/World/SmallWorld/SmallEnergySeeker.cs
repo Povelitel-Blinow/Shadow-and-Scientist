@@ -1,6 +1,7 @@
 using GadgetNamespace;
 using System.Collections.Generic;
 using UnityEngine;
+using WorldNamespace;
 
 namespace SmallWorldNamespace
 {
@@ -9,11 +10,22 @@ namespace SmallWorldNamespace
         [SerializeField] private float _spotDistance;
         [SerializeField] private float _catchDistance;
 
+        public static SmallEnergySeeker Instance { get; private set; }
+
         private List<PureEnergy> _pureEnergies = new List<PureEnergy>();
+
+        public void Init()
+        {
+            Instance = this;
+        }
 
         public void UpdateSeeker()
         {
-            if (_pureEnergies.Count == 0) return;
+            if (_pureEnergies.Count == 0) 
+            {
+                EnergySeeker.Instance.SetEnergyRangeRatio(0);
+                return;
+            }
 
             PureEnergy energy = FindClosestEnergy();
             float distance = (transform.position - energy.transform.position).magnitude;
@@ -58,6 +70,16 @@ namespace SmallWorldNamespace
             }
 
             return energy;
+        }
+
+        public bool TryCatchEnergy()
+        {
+            if (_pureEnergies.Count == 0) return false;
+
+            PureEnergy pureEnergy = FindClosestEnergy();
+
+            pureEnergy.Catch();
+            return true;
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

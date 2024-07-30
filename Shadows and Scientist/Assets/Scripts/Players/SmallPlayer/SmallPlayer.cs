@@ -21,6 +21,7 @@ namespace SmallPlayerNamespace
         public void Init()
         {
             Instance = this;
+            _energySeeker.Init();
         }
 
         private void Update()

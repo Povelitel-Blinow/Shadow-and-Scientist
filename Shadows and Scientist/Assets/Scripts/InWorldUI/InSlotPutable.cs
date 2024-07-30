@@ -72,10 +72,8 @@ namespace MaterialNamespace
         public void Show()
         {
             transform.DOComplete();
-            transform.DOScale(1, 0.5f).OnComplete(() =>
-            {
-                gameObject.SetActive(true);
-            });
+            gameObject.SetActive(true);
+            transform.DOScale(1, 0.5f);
         }
 
         public void Hide()

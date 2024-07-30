@@ -1,6 +1,7 @@
 using CraftNamespace;
 using MaterialNamespace;
 using SlotNamespace;
+using SmallWorldNamespace;
 using UnityEngine;
 
 namespace GadgetNamespace
@@ -12,6 +13,11 @@ namespace GadgetNamespace
 
         [SerializeField] private LineTimer _line;
 
+        [Header("Catching Energy")]
+        [SerializeField] private float _catchRatio;
+
+        private float _ratio = 0f;
+
         public static EnergySeeker Instance { get; private set; }
 
         public void Init()
@@ -21,12 +27,18 @@ namespace GadgetNamespace
 
         public void SetEnergyRangeRatio(float ratio)
         {
+            _ratio = ratio;
             _line.SetLine(ratio);
         }
 
         public void Spawn()
         {
-            _slot.PutInObject(_energyPrefab);
+            if (_ratio >= _catchRatio)
+            {
+                if (SmallEnergySeeker.Instance.TryCatchEnergy() == false) return;
+
+                _slot.PutInObject(_energyPrefab);
+            }
         }
     }
 }
