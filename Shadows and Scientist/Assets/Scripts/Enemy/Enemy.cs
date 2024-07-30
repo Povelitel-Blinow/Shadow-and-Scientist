@@ -8,7 +8,6 @@ namespace EnemyNamespace
     {
         [SerializeField] private EnemyLook _look;
         [SerializeField] private EnemyMove _move;
-        
 
         private void Update()
         {
