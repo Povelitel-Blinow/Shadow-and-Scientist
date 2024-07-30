@@ -1,34 +1,55 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace PlayerNamespace
 {
     public class PlayerFear : MonoBehaviour
     {
-        [SerializeField] private FearPanel _panel;
+        [SerializeField] private FearPanel _fearPanel;
 
         [Header("Settings")]
         [SerializeField] private float _maxFear;
         [SerializeField] private float _minFearDistance;
         [SerializeField] private float _maxFearDistance;
 
+        [SerializeField] private float _maxHealth;
+        [SerializeField] private float _currentHealth;
+        [SerializeField] private float _healthRegenerationSpeed;
+
         private List<IScary> _scaries = new List<IScary>();
 
         private void Update()
         {
-            if (_scaries.Count == 0) return;
+            if (_scaries.Count == 0) 
+            {
+                Regenerate();
+            }
+            else
+            {
+                UpdateFear();
+            }
 
+            _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
+            float ratio = (_maxHealth - _currentHealth) / _maxHealth;
+            SetHealth(ratio);
+        }
+
+        private void Regenerate()
+        {
+            _currentHealth += _healthRegenerationSpeed * Time.deltaTime;
+        }
+
+        private void UpdateFear()
+        {
             float fear = 0;
 
-            foreach(var scary in _scaries)
+            foreach (var scary in _scaries)
             {
                 float distance = (scary.GetPosition() - transform.position).magnitude;
 
                 fear += scary.GetScareness() * GetFearRatio(distance);
             }
-            SetFear(fear);
+            _currentHealth -= fear * Time.deltaTime;
         }
 
         private float GetFearRatio(float distance)
@@ -48,11 +69,9 @@ namespace PlayerNamespace
             }
         }
 
-        private void SetFear(float fear)
+        private void SetHealth(float ratio)
         {
-            float fearRatio = Mathf.Lerp(0, 0.9f, fear / _maxFear);
-
-            _panel.SetFear(fearRatio);
+            _fearPanel.SetFear(ratio);
         }
 
         public void RegisterScary(IScary scary)

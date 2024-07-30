@@ -4691,10 +4691,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b38fb6a9d9e8c478a9314e3fc00151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panel: {fileID: 416663442}
+  _fearPanel: {fileID: 416663442}
   _maxFear: 5
-  _minFearDistance: 5
+  _minFearDistance: 2
   _maxFearDistance: 1
+  _maxHealth: 10
+  _currentHealth: 10
+  _healthRegenerationSpeed: 1
 --- !u!1 &1573629990
 GameObject:
   m_ObjectHideFlags: 0

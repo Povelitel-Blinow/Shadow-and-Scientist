@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _look: {fileID: 6129436517426302570}
   _move: {fileID: 2643529915371003218}
-  _fearfulness: 1
+  _fearfulness: 2
 --- !u!114 &2643529915371003218
 MonoBehaviour:
   m_ObjectHideFlags: 0
