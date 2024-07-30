@@ -33,8 +33,6 @@ namespace GadgetNamespace
 
         private void Update()
         {
-            Debug.Log(_timer);
-
             _timer += Time.deltaTime;
 
             if (_ratio == 0) return;

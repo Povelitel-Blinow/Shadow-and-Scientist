@@ -217,7 +217,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.08707976}
+  m_Offset: {x: 0, y: -0.03977132}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -228,7 +228,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3667227, y: 0.9432149}
+  m_Size: {x: 0.9588772, y: 0.6895127}
   m_EdgeRadius: 0
 --- !u!114 &9192539940382654527
 MonoBehaviour:
@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923334409083895940, guid: bc9d7a71939418340996e9176d3ba5ca, type: 3}
       propertyPath: _sounds.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 923334409083895940, guid: bc9d7a71939418340996e9176d3ba5ca, type: 3}
       propertyPath: _sounds.Array.data[0]
@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 923334409083895940, guid: bc9d7a71939418340996e9176d3ba5ca, type: 3}
       propertyPath: _sounds.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: c9b9fa1daf295f84cadf470f7fe91942, type: 3}
+      objectReference: {fileID: 8300000, guid: 24243f12709f76f409d3f4ee248b4eb6, type: 3}
     - target: {fileID: 923334409083895940, guid: bc9d7a71939418340996e9176d3ba5ca, type: 3}
       propertyPath: _sounds.Array.data[2]
       value: 

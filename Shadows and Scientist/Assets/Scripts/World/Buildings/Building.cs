@@ -50,10 +50,6 @@ namespace WorldNamespace
             {
                 BreakIn();
             }
-            else
-            {
-                _brokeIn = false;
-            }
         }
 
         private void BreakIn()
@@ -65,11 +61,12 @@ namespace WorldNamespace
             {
                 g.BreakIn(_enemy);
             }
-            _mins += 1;
         }
 
         private void Update()
         {
+            if(_brokeIn) return;
+
             if (_isRegitered == false) return;
 
             _timer += Time.deltaTime;
