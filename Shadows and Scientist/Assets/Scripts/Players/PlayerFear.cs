@@ -1,3 +1,4 @@
+using SmallPlayerNamespace;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ namespace PlayerNamespace
 
         private void Update()
         {
+            Debug.Log(_scaries.Count);
             if (_scaries.Count == 0) 
             {
                 Regenerate();
@@ -45,10 +47,13 @@ namespace PlayerNamespace
 
             foreach (var scary in _scaries)
             {
-                float distance = (scary.GetPosition() - transform.position).magnitude;
+                float distance = (scary.GetPosition() - SmallPlayer.Instance.transform.position).magnitude;
 
                 fear += scary.GetScareness() * GetFearRatio(distance);
             }
+
+            Debug.Log(fear);
+
             _currentHealth -= fear * Time.deltaTime;
         }
 

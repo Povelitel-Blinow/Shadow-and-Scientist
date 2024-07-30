@@ -1,4 +1,5 @@
 using BuildingNameSpace;
+using EnemyNamespace;
 using System;
 using UnityEngine;
 
@@ -13,11 +14,23 @@ namespace WorldNamespace
         [SerializeField] private int _mins;
         [SerializeField] private int _secs;
 
+        [SerializeField] private GateWay[] _gateWays;
+        [SerializeField] private Enemy _enemy;
+
         private float _timer = 0f;
+
+        private bool _brokeIn = false;
+
+        private bool _isRegitered = false;
 
         public Action<int, int> OnTick;
 
         public Transform GetBuildingTransform() => _buildingCenter;
+
+        public void SetIsRegistered(bool isRegistered)
+        {
+            _isRegitered = isRegistered;
+        }
 
         public void Pay(int mins)
         {
@@ -28,14 +41,37 @@ namespace WorldNamespace
 
         public void GetInBuilding()
         {
-            if(_mins == 0 &&  _secs == 0)
+            CheckRent();
+        }
+
+        private void CheckRent()
+        {
+            if (_mins == 0 && _secs == 0)
             {
-                Debug.Log("Sniched");
+                BreakIn();
             }
+            else
+            {
+                _brokeIn = false;
+            }
+        }
+
+        private void BreakIn()
+        {
+            if (_brokeIn) return;
+
+            _brokeIn = true;
+            foreach(var g in _gateWays)
+            {
+                g.BreakIn(_enemy);
+            }
+            _mins += 1;
         }
 
         private void Update()
         {
+            if (_isRegitered == false) return;
+
             _timer += Time.deltaTime;
 
             if (_timer > 1)
@@ -43,6 +79,8 @@ namespace WorldNamespace
                 _timer -= 1;
                 Tick();
             }
+
+            CheckRent();
         }
 
         private void Tick()

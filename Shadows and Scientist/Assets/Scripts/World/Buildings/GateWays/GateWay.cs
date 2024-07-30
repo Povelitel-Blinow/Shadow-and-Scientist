@@ -1,4 +1,5 @@
 using CraftNamespace;
+using EnemyNamespace;
 using SmallPlayerNamespace;
 using UnityEngine;
 
@@ -32,6 +33,13 @@ namespace WorldNamespace
         }
 
         protected virtual void OnInteract() { }
+
+        public void BreakIn(Enemy enemy)
+        {
+            OnBreakIn(enemy);
+        }
+
+        protected virtual void OnBreakIn(Enemy enemy) { }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {

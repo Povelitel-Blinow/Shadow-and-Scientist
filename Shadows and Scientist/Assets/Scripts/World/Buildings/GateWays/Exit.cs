@@ -7,7 +7,7 @@ namespace WorldNamespace
         protected override void OnInteract()
         {
             PlayerManager.Instance.GetOutBuilding();
-            _building.ShowRoof();
+            _building?.ShowRoof();
         }
     }
 }
