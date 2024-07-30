@@ -11,12 +11,10 @@ namespace BuildingNameSpace
         public void HideRoof()
         {
             _fadeController.FadeOut();
-            //gameObject.SetActive(false);
         }
 
         public void ShowRoof()
         {
-           // gameObject.SetActive(true);
             _fadeController.FadeIn();
         }
 

@@ -1,3 +1,5 @@
+using SmallPlayerNamespace;
+using System;
 using UnityEngine;
 
 namespace EnemyNamespace
@@ -17,6 +19,9 @@ namespace EnemyNamespace
         private float _timeSinceLastSeen = 0;
 
         public EnemyLookStates State { get; private set; } = EnemyLookStates.Looking;
+
+        public Action<Fearable> OnSpot;
+        public Action<Fearable> OnDespot;
 
         public Vector2 GetMovePos()
         {
@@ -48,6 +53,11 @@ namespace EnemyNamespace
                 if (hit.collider.TryGetComponent(out Spotable spot))
                 {
                     _spotable = spot;
+                    if(_spotable.TryGetComponent(out Fearable fearable))
+                    {
+                        OnSpot?.Invoke(fearable);
+                    }
+
                     _lastSeenPos = _spotable.GetPosition();
                     State = EnemyLookStates.Aimming;
                     return;
@@ -87,6 +97,10 @@ namespace EnemyNamespace
             else
             {
                 _timeSinceLastSeen = 0;
+                if (_spotable.TryGetComponent(out Fearable fearable))
+                {
+                    OnDespot?.Invoke(fearable);
+                }
                 _spotable = null;
                 State = EnemyLookStates.KnowLastPosition;
             }

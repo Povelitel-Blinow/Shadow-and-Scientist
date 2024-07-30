@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private RentWindow _rentWindow;
     [SerializeField] private CameraBehaviour _cameraBehaviour;
     [SerializeField] private WorkPlace _workPlace;
+    [SerializeField] private PlayerFear _playerFear;
 
     private Building _lastVisitedBuilding;
 
@@ -49,4 +50,7 @@ public class PlayerManager : MonoBehaviour
         _workPlace.Attach(_cameraBehaviour.transform);
         _workPlace.OnBuildingLeave();
     }
+
+    public void RegisterScare(IScary scary) => _playerFear.RegisterScary(scary);
+    public void DeRegisterScare(IScary scary) => _playerFear.DeregisterScary(scary);
 }
