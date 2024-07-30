@@ -79,6 +79,8 @@ namespace SmallWorldNamespace
             PureEnergy pureEnergy = FindClosestEnergy();
 
             pureEnergy.Catch();
+
+            UpdateSeeker();
             return true;
         }
 

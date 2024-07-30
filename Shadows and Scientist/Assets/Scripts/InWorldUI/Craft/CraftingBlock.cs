@@ -14,6 +14,9 @@ namespace CraftNamespace
         [SerializeField] private CraftingBlockTrigger _trigger;
         [SerializeField] private OnFloorPutable _floor;
 
+        [Header("Sound")]
+        [SerializeField] private SoundManager _soundManager;
+
         private CraftBlockWindow _window;
 
         private void Start()
@@ -42,6 +45,11 @@ namespace CraftNamespace
 
         private void SetIsWorking(bool isWorking)
         {
+            if (isWorking)
+                _soundManager.PlaySound();
+            else
+                _soundManager.StopSound();
+
             _animation.SetIsWorking(isWorking);
         }
 

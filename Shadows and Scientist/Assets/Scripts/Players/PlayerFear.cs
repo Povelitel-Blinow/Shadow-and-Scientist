@@ -17,11 +17,14 @@ namespace PlayerNamespace
         [SerializeField] private float _currentHealth;
         [SerializeField] private float _healthRegenerationSpeed;
 
+        [Header("Sound")]
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private float _maxVolume;
+
         private List<IScary> _scaries = new List<IScary>();
 
         private void Update()
         {
-            Debug.Log(_scaries.Count);
             if (_scaries.Count == 0) 
             {
                 Regenerate();
@@ -34,6 +37,8 @@ namespace PlayerNamespace
             _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
             float ratio = (_maxHealth - _currentHealth) / _maxHealth;
             SetHealth(ratio);
+
+            _audioSource.volume = Mathf.Lerp(_maxVolume, 0, _currentHealth / _maxHealth);
         }
 
         private void Regenerate()
@@ -51,8 +56,6 @@ namespace PlayerNamespace
 
                 fear += scary.GetScareness() * GetFearRatio(distance);
             }
-
-            Debug.Log(fear);
 
             _currentHealth -= fear * Time.deltaTime;
         }

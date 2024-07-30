@@ -39,8 +39,6 @@ namespace WindowNamespace
 
             if (_inputSlot.Material.MaterialType != MaterialType.Gold) return;
 
-            Debug.Log(1);
-
             StartCoroutine(Crafting());
         }
 

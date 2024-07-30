@@ -3,6 +3,7 @@ using MaterialNamespace;
 using SlotNamespace;
 using SmallWorldNamespace;
 using UnityEngine;
+using WorldNamespace;
 
 namespace GadgetNamespace
 {
@@ -16,13 +17,35 @@ namespace GadgetNamespace
         [Header("Catching Energy")]
         [SerializeField] private float _catchRatio;
 
-        private float _ratio = 0f;
+        [Header("Sound")]
+        [SerializeField] private SoundManager _soundManager;
+        [SerializeField] private float _minDelay;
+        [SerializeField] private float _maxDelay;
 
+        private float _ratio = 0f;
+        private float _timer = 0f;
         public static EnergySeeker Instance { get; private set; }
 
         public void Init()
         {
             Instance = this;
+        }
+
+        private void Update()
+        {
+            Debug.Log(_timer);
+
+            _timer += Time.deltaTime;
+
+            if (_ratio == 0) return;
+
+            float tickTime = Mathf.Lerp(_maxDelay, _minDelay, _ratio);
+
+            if(_timer >= tickTime)
+            {
+                _timer = 0;
+                _soundManager.PlaySound();
+            }
         }
 
         public void SetEnergyRangeRatio(float ratio)
@@ -35,7 +58,9 @@ namespace GadgetNamespace
         {
             if (_ratio >= _catchRatio)
             {
+                if (_slot.InSlot != null) return;
                 if (SmallEnergySeeker.Instance.TryCatchEnergy() == false) return;
+
 
                 _slot.PutInObject(_energyPrefab);
             }

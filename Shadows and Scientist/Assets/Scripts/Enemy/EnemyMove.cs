@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using WorldNamespace;
 
 namespace EnemyNamespace
 {
@@ -8,6 +9,12 @@ namespace EnemyNamespace
         [SerializeField] private NavMeshAgent _agent;
 
         [SerializeField] private EnemyAnimate _animate;
+
+        [Header("Sound")]
+        [SerializeField] private SoundManager _soundManager;
+        [SerializeField] private float _stepDistance;
+
+        private float _distance;
 
         private Vector3 _lastPos;
 
@@ -20,6 +27,14 @@ namespace EnemyNamespace
             }
             else
                 _animate.SetIsRunning(false);
+
+            _distance += (transform.position - _lastPos).magnitude;
+
+            if(_distance >= _stepDistance) 
+            {
+                _distance = 0;
+                _soundManager.PlaySound();
+            }
 
             _lastPos = transform.position;
         }

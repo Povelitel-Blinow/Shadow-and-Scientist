@@ -35,9 +35,13 @@ public class PlayerManager : MonoBehaviour
 
     public void GetInBuilding(Building building)
     {
+        if (_lastVisitedBuilding != null && _lastVisitedBuilding != building)
+            _lastVisitedBuilding.SetIsRegistered(false);
+
         _lastVisitedBuilding = building;
         _rentWindow.SetNewBuilding(building);
         building.GetInBuilding();
+        building.SetIsRegistered(true);
 
         _cameraBehaviour.MoveTo(building.GetBuildingTransform());
         _workPlace.Attach(building.GetBuildingTransform());

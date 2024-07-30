@@ -272,7 +272,7 @@ MonoBehaviour:
   - {fileID: 8262473239113372267}
   - {fileID: 3988808737852368083}
   - {fileID: 2084792744171088707}
-  _enemy: {fileID: 1043178514338791455, guid: 62f6852a27f7ddc49aaa83c923eac627, type: 3}
+  _enemy: {fileID: 1043178514338791455, guid: bcd2a8cfa5acf4c4db49f069505c6d8d, type: 3}
 --- !u!1 &1445974246291656736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   - {fileID: 7056783866630242177}
   - {fileID: 149104650914477812}
   - {fileID: 7669233101291690338}
-  _enemy: {fileID: 1043178514338791455, guid: 62f6852a27f7ddc49aaa83c923eac627, type: 3}
+  _enemy: {fileID: 1043178514338791455, guid: bcd2a8cfa5acf4c4db49f069505c6d8d, type: 3}
 --- !u!1 &6989579175072317441
 GameObject:
   m_ObjectHideFlags: 0

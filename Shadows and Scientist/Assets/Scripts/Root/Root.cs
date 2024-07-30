@@ -2,6 +2,7 @@ using UnityEngine;
 using SmallPlayerNamespace;
 using PlayerNamespace;
 using CursorNamespace;
+using WorldNamespace;
 
 public class Root : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Root : MonoBehaviour
     [SerializeField] private CursorUI _cursor;
     
     [SerializeField] private Map _map;
+
+    [SerializeField] private EnergyGenerator _energyGenerator;
 
     private const int FPS = 60;
 
@@ -20,5 +23,6 @@ public class Root : MonoBehaviour
         _playerManager.Init();
         _cursor.Init();
         _map.Init();
+        _energyGenerator.Init();
     }
 }

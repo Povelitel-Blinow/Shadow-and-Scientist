@@ -6,7 +6,6 @@ using WorldNamespace;
 
 namespace MaterialNamespace
 {
-    [RequireComponent(typeof(BoxCollider2D))]
     public class InSlotPutable : Moveable, IInSlopPutable
     {
         [Header("InSlotPutable params")]
