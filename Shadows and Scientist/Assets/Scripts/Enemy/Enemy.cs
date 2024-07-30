@@ -8,22 +8,20 @@ namespace EnemyNamespace
     {
         [SerializeField] private EnemyLook _look;
         [SerializeField] private EnemyMove _move;
-        [SerializeField] private EnemyAnimate _animate;
+        
 
         private void Update()
         {
-            Vector2 pos = _look.TrySawSpotable();
+            _look.UpdateLook();
+            _move.UpdateMove();
 
-            if(_look.SeeSpotable() == false)
+            if (_look.State != EnemyLookStates.Looking)
             {
-                _animate.SetIsRunning(false);
+                Vector2 pos = _look.GetMovePos();
+
+                _move.MoveTo(pos);
                 return;
             }
-
-            
-            _move.MoveTo(pos);
-
-            _animate.SetIsRunning(true);
         }
 
         private void OnValidate()

@@ -3572,7 +3572,7 @@ Transform:
   m_GameObject: {fileID: 1557108467}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.22, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3613,6 +3613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1557108469}
+  _body: {fileID: 1560813174}
 --- !u!1 &1560302430
 GameObject:
   m_ObjectHideFlags: 0
@@ -3722,7 +3723,7 @@ Transform:
   m_GameObject: {fileID: 1560813173}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.22000003, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3893,7 +3894,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _look: {fileID: 1683976611}
   _move: {fileID: 1683976612}
-  _animate: {fileID: 1557108470}
 --- !u!114 &1683976611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3910,9 +3910,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   _raycastPoint: {fileID: 478017770}
-  _lookDistance: 10
-  _rotSpeed: 60
-  _followTimeSinceLastSeen: 5
+  _lookDistance: 7
+  _rotSpeed: 180
+  _followTimeSinceLastSeen: 1
 --- !u!114 &1683976612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3926,7 +3926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _agent: {fileID: 1683976609}
-  _stopDistance: 0.5
+  _animate: {fileID: 1557108470}
 --- !u!1 &1701212743
 GameObject:
   m_ObjectHideFlags: 0
