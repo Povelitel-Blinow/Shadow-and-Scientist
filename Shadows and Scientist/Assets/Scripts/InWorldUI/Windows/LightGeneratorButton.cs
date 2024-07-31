@@ -7,6 +7,8 @@ namespace WindowNamespace
 {
     public class LightGeneratorButton : SelectableButton
     {
+        [SerializeField] private GameObject _light;
+
         [Header("ShowUp Settings")]
         [SerializeField] private Transform _moveable;
         [SerializeField] private Transform _openPos;
@@ -25,6 +27,12 @@ namespace WindowNamespace
         protected override void OnClick()
         {
             if (_isOpened == false) return;
+
+            _light.gameObject.SetActive(true);
+            _light.transform.DOScale(100, 2).OnComplete(() =>
+            {
+                PlayerManager.Instance.Win();
+            });
         }
 
         public void Open()

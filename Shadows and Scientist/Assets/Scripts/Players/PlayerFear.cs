@@ -38,8 +38,11 @@ namespace PlayerNamespace
             }
 
             _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
-            float ratio = (_maxHealth - _currentHealth) / _maxHealth;
+            float ratio = (_maxHealth- _currentHealth) / _maxHealth;
             SetHealth(ratio);
+
+            if (_currentHealth <= 0)
+                PlayerManager.Instance.Lose();
 
             _audioSource.volume = Mathf.Lerp(_maxVolume, 0, _currentHealth / _maxHealth);
         }

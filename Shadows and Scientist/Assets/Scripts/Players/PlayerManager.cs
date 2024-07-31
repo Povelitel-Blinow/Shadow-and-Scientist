@@ -14,6 +14,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private WorkPlace _workPlace;
     [SerializeField] private PlayerFear _playerFear;
 
+    [Header("UI")]
+    [SerializeField] private GameObject _win;
+    [SerializeField] private GameObject _lose;
+
     private Building _lastVisitedBuilding;
 
     public static PlayerManager Instance { get; private set; }
@@ -57,4 +61,18 @@ public class PlayerManager : MonoBehaviour
 
     public void RegisterScare(IScary scary) => _playerFear.RegisterScary(scary);
     public void DeRegisterScare(IScary scary) => _playerFear.DeregisterScary(scary);
+
+    public void Win()
+    {
+        Cursor.visible = true;
+        _win.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void Lose()
+    {
+        Cursor.visible = true;
+        _lose.SetActive(true);
+        Time.timeScale = 0;
+    }
 }

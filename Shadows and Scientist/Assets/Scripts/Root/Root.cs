@@ -3,6 +3,7 @@ using SmallPlayerNamespace;
 using PlayerNamespace;
 using CursorNamespace;
 using WorldNamespace;
+using UnityEngine.SceneManagement;
 
 public class Root : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class Root : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
+
         Application.targetFrameRate = FPS;
 
         _playerTips.Init();
@@ -28,5 +31,10 @@ public class Root : MonoBehaviour
         _cursor.Init();
         _map.Init();
         _energyGenerator.Init();
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(0);
     }
 }
