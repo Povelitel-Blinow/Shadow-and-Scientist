@@ -1,5 +1,6 @@
 using UnityEngine;
 using InWorldUINamespace;
+using PlayerNamespace;
 
 namespace GadgetNamespace
 {

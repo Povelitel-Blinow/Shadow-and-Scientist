@@ -3,6 +3,7 @@ using UnityEngine;
 using WorldNamespace;
 using SlotNamespace;
 using MaterialNamespace;
+using PlayerNamespace;
 
 namespace GadgetNamespace
 {
@@ -13,6 +14,11 @@ namespace GadgetNamespace
         [SerializeField] private CraftSlot _inputSlot;
 
         private Building _building;
+
+        private void OnEnable()
+        {
+            PlayerTips.Instance.ShowRentTip();
+        }
 
         private void Start()
         {

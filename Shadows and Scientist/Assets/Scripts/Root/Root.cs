@@ -14,11 +14,15 @@ public class Root : MonoBehaviour
 
     [SerializeField] private EnergyGenerator _energyGenerator;
 
+    [SerializeField] private PlayerTips _playerTips;
+
     private const int FPS = 60;
 
     private void Awake()
     {
         Application.targetFrameRate = FPS;
+
+        _playerTips.Init();
 
         _playerManager.Init();
         _cursor.Init();

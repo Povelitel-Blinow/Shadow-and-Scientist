@@ -1,5 +1,6 @@
 using CraftNamespace;
 using MaterialNamespace;
+using PlayerNamespace;
 using SlotNamespace;
 using SmallWorldNamespace;
 using UnityEngine;
@@ -25,6 +26,11 @@ namespace GadgetNamespace
         private float _ratio = 0f;
         private float _timer = 0f;
         public static EnergySeeker Instance { get; private set; }
+
+        private void OnEnable()
+        {
+            PlayerTips.Instance.ShowEnergySeekerTip();
+        }
 
         public void Init()
         {

@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using MaterialNamespace;
 using SlotNamespace;
+using PlayerNamespace;
 
 namespace GadgetNamespace
 {
@@ -18,6 +19,11 @@ namespace GadgetNamespace
 
         [Header("Metarials")]
         [SerializeField] private MaterialsList[] _materials;
+
+        private void OnEnable()
+        {
+            PlayerTips.Instance.ShowMaterializerTip();
+        }
 
         public void TryMaterialize()
         {

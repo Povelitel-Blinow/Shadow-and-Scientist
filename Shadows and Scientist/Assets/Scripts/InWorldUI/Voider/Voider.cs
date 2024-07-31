@@ -1,4 +1,5 @@
 using DG.Tweening;
+using PlayerNamespace;
 using SlotNamespace;
 using UnityEngine;
 
@@ -16,6 +17,8 @@ namespace VoiderNamespace
 
         public void Click()
         {
+            PlayerTips.Instance.ShowVoidTip();
+
             Debug.Log(_isActive);
 
             transform.DOComplete();

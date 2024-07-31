@@ -1,5 +1,6 @@
 using CraftNamespace;
 using MaterialNamespace;
+using PlayerNamespace;
 using SlotNamespace;
 using System.Collections;
 using UnityEngine;
@@ -19,6 +20,8 @@ namespace WindowNamespace
 
         private void OnEnable()
         {
+            PlayerTips.Instance.ShowCraftWindowTip();
+
             _inputSlot.OnPut += TryMake;
             _outputSlot.OnPutOut += TryMake;
         }
