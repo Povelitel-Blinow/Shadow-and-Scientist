@@ -32,6 +32,7 @@ namespace EnemyNamespace
         private void Spot(Fearable fearable)
         {
             fearable.RegisterScary(this);
+            OnSpotted?.Invoke(fearable.transform.position);
         }
 
         private void Despot(Fearable fearable)

@@ -20,11 +20,14 @@ namespace PlayerNamespace
         [Header("Sound")]
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private float _maxVolume;
+        [SerializeField] private Soundtrack _soundtrack;
+        [SerializeField] private int _maxVolumeScaries;
 
         private List<IScary> _scaries = new List<IScary>();
 
         private void Update()
         {
+            _soundtrack.SetVolume((float)_scaries.Count/(float)_maxVolumeScaries);
             if (_scaries.Count == 0) 
             {
                 Regenerate();

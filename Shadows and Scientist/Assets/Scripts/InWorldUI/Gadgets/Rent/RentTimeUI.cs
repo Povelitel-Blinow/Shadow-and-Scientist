@@ -9,8 +9,8 @@ namespace RentNamespace
 
         public void SetTime(int mins, int secs)
         {
-            string minsStr = mins>9? "" : "0" + mins.ToString();
-            string secsStr = secs>9? "" : "0" + secs.ToString();
+            string minsStr = (mins>9? "" : "0") + mins.ToString();
+            string secsStr = (secs>9? "" : "0") + secs.ToString();
 
             if (secs % 2 == 0)
             {
@@ -20,13 +20,12 @@ namespace RentNamespace
                 }
                 else
                 {
-                    _time.text = $"{mins} {secs}";
+                    _time.text = $"{minsStr} {secsStr}";
                 }
             }
             else
             {
-
-                _time.text = $"{mins}:{secs}";
+                _time.text = $"{minsStr}:{secsStr}";
             }
         }
     }
